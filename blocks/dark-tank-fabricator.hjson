@@ -1,18 +1,33 @@
 name: "dark-tank-fabricator"
-type: unit-factory
+type: unitfactory
+health: 1500
+size: 3
+configureable: false
+consumes: {
+power: 3
+}
+plans: [
+  {
+    unit: dark-stell
+    requirements: [
+      silicon/50
+      beryllium/40
+    ]
+    time: 360
+  }
+]
 category: units
 requirements: [
   [silicon, 100],
   [tungsten, 75],
   [thorium, 50]
 ]
-size: 3
-hasPower: true
-hasLiquid: true
-buildTime: 60
-consumes:
-  power: 3
-plans: [
-  { unit: "dark-stell", time: 360 }
-]
-outputUnit: "dark-stell"
+research: {
+parent: tank-fabricator
+objectives: [
+  {
+    type: OnSector
+    preset: basin
+  }
+  ]
+}
