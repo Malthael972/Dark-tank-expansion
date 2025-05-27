@@ -1,0 +1,17 @@
+name: "dark-tank-refabricator"
+type: unit-factory
+category: units
+requirements: [
+  [silicon, 150],
+  [tungsten, 100],
+  [thorium, 75],
+  [oxide, 40]
+]
+size: 3
+buildTime: 60
+consumes:
+  power: 6
+plans: [
+  { unit: "dark-locus", time: 480 }
+]
+outputUnit: "dark-locus"

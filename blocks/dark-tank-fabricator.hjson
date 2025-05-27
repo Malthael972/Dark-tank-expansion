@@ -1,0 +1,16 @@
+name: "dark-tank-fabricator"
+type: unit-factory
+category: units
+requirements: [
+  [silicon, 100],
+  [tungsten, 75],
+  [thorium, 50]
+]
+size: 3
+buildTime: 60
+consumes:
+  power: 3
+plans: [
+  { unit: "dark-stell", time: 360 }
+]
+outputUnit: "dark-stell"
