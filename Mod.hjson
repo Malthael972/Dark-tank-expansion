@@ -1,0 +1,6 @@
+name: "DT-expansion"
+displayName: "dark-tank-expansion"
+author: "AverageGuy972"
+description: "adds new tank unit to game."
+version: "0.3"
+minGameVersion: 140
