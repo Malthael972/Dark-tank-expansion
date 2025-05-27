@@ -8,6 +8,8 @@ requirements: [
   [oxide, 60]
 ]
 size: 5
+hasPower: true
+hasLiquid: true
 buildTime: 60
 consumes:
   power: 9
