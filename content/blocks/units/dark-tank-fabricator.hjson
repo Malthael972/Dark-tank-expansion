@@ -1,0 +1,23 @@
+name: dark-tank-fabricator
+localizedName: Dark Tank Fabricator
+description: Crafts the first-tier Dark tank unit.
+size: 3
+health: 575
+buildTime: 5.66
+powerUse: 120
+category: units
+requirements: [
+  {item: silicon, amount: 200},
+  {item: beryllium, amount: 150}
+]
+unitType: dark-stell
+plans: [
+  {
+    unit: dark-stell
+    time: 35
+    requirements: [
+      {item: silicon, amount: 40},
+      {item: beryllium, amount: 50}
+    ]
+  }
+]
