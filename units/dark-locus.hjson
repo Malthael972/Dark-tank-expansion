@@ -1,0 +1,11 @@
+name: dark-locus
+localizedName: Dark Locus
+constructor: mech
+controller: player
+flying: false
+health: 3300
+speed: 0.5
+armor: 10
+buildSpeed: 1.2
+itemCapacity: 60
+weapons: []

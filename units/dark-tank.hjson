@@ -1,0 +1,11 @@
+name: dark-tank
+localizedName: Dark Stell
+constructor: mech
+controller: player
+flying: false
+health: 1800
+speed: 0.45
+armor: 6
+buildSpeed: 0.7
+itemCapacity: 40
+weapons: []
