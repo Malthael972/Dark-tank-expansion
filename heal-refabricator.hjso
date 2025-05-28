@@ -2,7 +2,10 @@ type: Reconstructor
 regionSuffix: "-dark"
 size: 3
 health: 750
-constructTime: 3875
+constructTime: 1000
+upgrades: [
+  [r1-heal, r2-regeneration]
+]
 consumes: {
 power: 3.8
 liquid:{
