@@ -1,5 +1,3 @@
-// content/units/darkling.hjson
-unit: darkling
 type: tank
 controller: builder
 health: 1500
