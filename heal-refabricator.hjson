@@ -26,7 +26,7 @@ parent: heal-fabricator
 objectives: [
   {
     type: OnSector
-    preset: substruction
+    preset: basin
   }
   ]
 }
@@ -34,6 +34,5 @@ requirements: [
   beryllium/400
   silicon/280
   oxide/90
-  toxide/75
   tungsten/130
 ]
