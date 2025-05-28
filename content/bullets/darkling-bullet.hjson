@@ -1,6 +1,6 @@
 name: darkling-bullet
 speed: 4.0
-damage: 30
+damage: 50
 lifetime: 60
 width: 7
 height: 9
