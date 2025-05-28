@@ -1,1 +1,44 @@
+// content/units/darkling.hjson
+unit: darkling
+type: tank
+controller: builder
+health: 1500
+armor: 3
+speed: 0.7
+accel: 0.08
+drag: 0.08
+hitSize: 10
+constructorSpeed: 0.65
+rotateSpeed: 3
+buildRange: 60
+itemCapacity: 10
+targetAir: false
+targetGround: true
+weapons: [
+  {
+    x: 4.5
+    y: -3.5
+    mirror: true
+    reload: 20
+    shootCone: 15
+    rotate: false
+    shootSound: shoot-smoke
+    bullet: {
+      speed: 3
+      damage: 20
+      lifetime: 25
+      width: 5
+      height: 9
+      shrinkY: 0.5
+      backColor: black
+      frontColor: crimson
+      hitEffect: explosion
+      despawnEffect: smoke
+    }
+  }
+]
 
+constructor: tank
+faction: dark
+
+research: stell
