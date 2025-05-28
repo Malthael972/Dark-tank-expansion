@@ -11,31 +11,16 @@ buildRange: 60
 itemCapacity: 10
 targetAir: true
 targetGround: true
+weapons: [
+  {
+    x: 0
+    y: 6
+    shootY: 0
+    reload: 20
+    rotate: false
+    mirror: false
+    shootSound: shootSmite
+    bullet: darkling-bullet
+  }
+]
 research: stell
-weapons:[
-    {
-      type: RepairBeamWeapon
-widthSinMag: 0.11
-reload: 20
-x: 0
-y: 7
-rotate: false
-shootY: 0
-beamWidth: 0.7
-shootCone: 15
-mirror: false
-repairSpeed: 1.95
-fractionRepairSpeed: 0.08
-targetUnits: false
-targetBuildings: true
-autoTarget: false
-controllable: true
-laserColor: 84f491
-healColor: 84f491
-
-bullet: {
-    type: BulletType
-    maxRange: 60
-    }
-    }
-    ]
