@@ -1,0 +1,55 @@
+type: tank
+controller: builder
+health: 1500
+armor: 3
+speed: 0.7
+accel: 0.08
+drag: 0.08
+hitSize: 10
+rotateSpeed: 3
+buildRange: 60
+itemCapacity: 10
+targetAir: true
+targetGround: true
+
+
+
+research: stell
+
+weapons: [
+  {
+    layerOffset: 0.0001
+    reload: 50
+    shootY: 4.5
+    recoil: 1
+    rotate: true
+    rotateSpeed: 2.2
+    mirror: false
+    x: 0
+    y: -0.75
+    heatColor: "f9350f"
+    cooldownTime: 30
+    shoot: {
+      type: ShootSingle
+      bullet: {
+        type: BasicBulletType
+        speed: 4
+        damage: 40
+        sprite: missile-large
+        smokeEffect: shootBigSmoke
+        shootEffect: shootBigColor
+        width: 5
+        height: 7
+        lifetime: 40
+        frontColor: f9350f
+        backColor: f9883f
+        shrinkY: 0
+        trailLength: 7
+        trailWidth: 1.2
+        trailColor: f9350f
+        despawnEffect: none
+        hitEffect: explosion
+      }
+    }
+  }
+]
