@@ -1,5 +1,6 @@
 name: "dark-tank-fabricator"
 type: unitfactory
+regionSuffix: "-dark"
 health: 1500
 size: 3
 configureable: false
