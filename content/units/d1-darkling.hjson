@@ -6,11 +6,10 @@ speed: 0.7
 accel: 0.08
 drag: 0.08
 hitSize: 10
-constructorSpeed: 0.65
 rotateSpeed: 3
 buildRange: 60
 itemCapacity: 10
-targetAir: false
+targetAir: true
 targetGround: true
 weapons: [
   {
@@ -35,8 +34,4 @@ weapons: [
     }
   }
 ]
-
-constructor: tank
-faction: dark
-
 research: stell
