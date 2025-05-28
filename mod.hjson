@@ -1,0 +1,5 @@
+name: "Heal Units Mod"
+author: "Based on Erekir Extended"
+version: "1.0"
+minGameVersion: 136
+description: "Includes Tier 1 and 2 heal units with their fabricators."
