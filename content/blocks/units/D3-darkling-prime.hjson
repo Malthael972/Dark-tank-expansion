@@ -1,0 +1,38 @@
+type: Reconstructor
+regionSuffix: "-dark"
+size: 3
+health: 750
+constructTime: 1000
+upgrades: [
+  [d2-darkling, d3-darkling]
+]
+consumes: {
+power: 3.8
+liquid:{
+    liquid: hydrogen
+    amount: 0.09
+}
+items:{
+  items: [
+    beryllium/30
+  silicon/60
+  tungsten/50
+  ]
+}
+}
+category: units
+research: {
+parent: heal-fabricator
+objectives: [
+  {
+    type: OnSector
+    preset: basin
+  }
+  ]
+}
+requirements: [
+  beryllium/400
+  silicon/280
+  oxide/90
+  tungsten/130
+]
