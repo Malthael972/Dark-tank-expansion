@@ -10,7 +10,7 @@ rotateSpeed: 3
 inaccuracy: 2
 ejectEffect: none
 shootSound: shoot-smoke
-bullet: mod-darkling-bullet
+bullet:
   type: basic
   speed: 3.2
   lifetime: 35
