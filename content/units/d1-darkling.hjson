@@ -13,5 +13,5 @@ targetAir: true
 targetGround: true
 rotate: true
 faceTarget: true
-weapons: [ mod-darkling-weapon ]
+weapons: [ @mod-darkling-weapon ]
 research: stell
