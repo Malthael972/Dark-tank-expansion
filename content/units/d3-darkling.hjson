@@ -1,0 +1,66 @@
+type: tank
+controller: ground
+template: ErekirUnitType
+flying: false
+health: 4500
+armor: 15
+speed: 0.85
+accel: 0.1
+drag: 0.08
+hitSize: 26  # 3.25x3.25 tiles = 26px
+rotateSpeed: 5
+targetAir: true
+targetGround: true
+rotate: true
+faceTarget: true
+weapons: [
+  {
+    name: d3-darkling-weapon
+    top: true
+    y: 0
+    x: 8
+    mirror: true
+    reload: 15  // ~4 shots per second
+    shootSound: railgun
+    alternate: false
+    bullet: {
+      type: basicBulletType
+      sprite: circle
+      damage: 80
+      pierceBuilding: false
+      pierce: true
+      speed: 5
+      lifetime: 85  // 5 × 4 = ~20 blocks range
+      width: 5
+      height: 7
+      shrinkX: 0
+      shrinkY: 0
+      trailColor: f7c749
+      trailLength: 14
+      trailWidth: 2.2
+      lightColor: f1ffa9
+      colorFrom: f1ffa9
+      colorTo: f7c749
+      fragBullets: 15
+      fragRandomSpread: 0
+      fragSpread: 10
+      fragBullet: {
+        type: basicBulletType
+        sprite: circle
+        damage: 25
+        pierce: true
+        pierceBuilding: true
+        speed: 5.5
+        lifetime: 22
+        shrinkX: 0
+        shrinkY: 0
+        width: 2.5
+        height: 2.5
+        trailColor: f7c749
+        trailLength: 7
+        trailWidth: 1.2
+      }
+    }
+  }
+]
+research: precept
