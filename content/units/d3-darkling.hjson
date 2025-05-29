@@ -20,7 +20,7 @@ weapons: [
     y: 0
     x: 8
     mirror: true
-    reload: 15  // ~4 shots per second
+    reload: 15
     shootSound: railgun
     alternate: false
     bullet: {
@@ -30,17 +30,17 @@ weapons: [
       pierceBuilding: false
       pierce: true
       speed: 5
-      lifetime: 85  // 5 × 4 = ~20 blocks range
+      lifetime: 85
       width: 5
       height: 7
       shrinkX: 0
       shrinkY: 0
-      trailColor: f7c749
+      trailColor: ff0000
       trailLength: 14
       trailWidth: 2.2
-      lightColor: f1ffa9
-      colorFrom: f1ffa9
-      colorTo: f7c749
+      lightColor: ff0000
+      frontColor: ff0000   // red
+      backColor: 000000    // black
       fragBullets: 15
       fragRandomSpread: 0
       fragSpread: 10
@@ -56,9 +56,11 @@ weapons: [
         shrinkY: 0
         width: 2.5
         height: 2.5
-        trailColor: f7c749
+        trailColor: ff0000
         trailLength: 7
         trailWidth: 1.2
+        frontColor: ff0000   // red
+        backColor: 000000    // black
       }
     }
   }
