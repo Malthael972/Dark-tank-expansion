@@ -1,5 +1,5 @@
 type: tank
-controller: tank
+controller: ground
 health: 1500
 armor: 3
 speed: 0.7
