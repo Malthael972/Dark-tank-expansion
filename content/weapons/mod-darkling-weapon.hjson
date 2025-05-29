@@ -1,8 +1,8 @@
 type: Weapon
 name: mod-darkling-weapon
 mirror: true
-x: 6.5
-y: -1.5
+x: 3
+y: 0
 shootY: 6
 reload: 15
 rotate: true
