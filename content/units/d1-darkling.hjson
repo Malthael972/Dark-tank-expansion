@@ -1,5 +1,5 @@
 type: tank
-controller: builder
+controller: ground
 health: 1500
 armor: 3
 speed: 0.7
@@ -11,5 +11,7 @@ buildRange: 60
 itemCapacity: 10
 targetAir: true
 targetGround: true
+rotate: true
+faceTarget: true
 weapons: [ @darkling-weapon ]
 research: stell
