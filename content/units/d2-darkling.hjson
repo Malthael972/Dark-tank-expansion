@@ -1,0 +1,14 @@
+type: tank
+constructor: ground
+flying: false
+health: 2500
+armor: 8
+speed: 5.25
+hitSize: 16
+rotateSpeed: 7
+engineOffset: 10
+drag: 0.04
+targetAir: true
+targetGround: true
+faceTarget: true
+canBoost: false
