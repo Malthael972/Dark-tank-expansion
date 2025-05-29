@@ -25,7 +25,7 @@ weapons: [
       "shootSound": "shotgun",
       "bullet": {
         "type": "basicBulletType",
-        "sprite": "d1-darkling-weapon",
+        "sprite": "circle",
         "damage": 25,
         "pierceBuilding": false,
         "pierce": false,
@@ -46,7 +46,7 @@ weapons: [
         "fragSpread": 10,
         "fragBullet": {
           "type": "basicBulletType",
-          "sprite": "d1-darkling-weapon",
+          "sprite": "cirlce",
           "damage": 5,
           "pierce": true,
           "pierceBuilding": true,
