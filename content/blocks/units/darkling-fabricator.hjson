@@ -10,10 +10,10 @@ plans: [
   {
     unit: d1-darkling
     requirements: [
-      silicon/60
-      beryllium/75
+      silicon/50
+      beryllium/40
     ]
-    time: 500
+    time: 1500
   }
 ]
 category: units
