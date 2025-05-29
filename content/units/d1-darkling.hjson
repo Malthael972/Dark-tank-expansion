@@ -11,5 +11,5 @@ targetAir: true
 targetGround: true
 rotate: true
 faceTarget: true
-weapons: [ d1-darkling-weapon ]
+weapons: [ @d1-darkling-weapon ]
 research: stell
