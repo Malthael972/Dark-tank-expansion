@@ -1,0 +1,35 @@
+type: Weapon
+mirror: true
+x: 6.5
+y: -1.5
+shootY: 6
+reload: 15
+rotate: true
+rotateSpeed: 3
+inaccuracy: 2
+ejectEffect: none
+shootSound: shoot-smoke
+
+bullet:
+  type: basic
+  speed: 3.2
+  lifetime: 23
+  damage: 18
+  knockback: 1.5
+  width: 7
+  height: 9
+  shrinkX: 0.3
+  shrinkY: 0.3
+  hitEffect: despawn-fire
+  despawnEffect: none
+  shootEffect: shoot-smoke
+  smokeEffect: none
+  collides: true
+  collidesAir: true
+  collidesGround: true
+  buildingDamageMultiplier: 0.3
+  trailEffect: none
+  trailLength: 6
+  trailWidth: 0.8
+  backColor: 4c4c4c
+  frontColor: ff0000
