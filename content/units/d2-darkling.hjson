@@ -30,7 +30,7 @@ weapons: [
       pierceBuilding: false
       pierce: true
       speed: 4.5
-      lifetime: 6  // 4.5 × 4.22 = ~19 blocks (Locus vanilla range)
+      lifetime: 75  // 4.5 × 4.22 = ~19 blocks (Locus vanilla range)
       width: 4
       height: 6
       shrinkX: 0
