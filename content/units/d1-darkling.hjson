@@ -32,7 +32,7 @@ weapons: [
         "trailColor": "f7c749",
         "trailLength": 12,
         "trailWidth": 2,
-        "speed": 3,
+        "speed": 4,
         "shrinkY": 0,
         "shrinkX": 0,
         "width": 3,
