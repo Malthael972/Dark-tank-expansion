@@ -1,6 +1,6 @@
 type: Weapon
 name: mod-darkling-weapon
-baseRegion: mod-darkling-weapon
+sprite: mod-darkling-weapon
 layerOffset: 0.001
 mirror: true
 x: 3
