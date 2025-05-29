@@ -12,8 +12,9 @@ rotateSpeed: 3
 inaccuracy: 2
 ejectEffect: none
 shootSound: shoot-smoke
+
 bullet:
-  type: basic
+  type: basicBulletType
   speed: 3.2
   lifetime: 35
   damage: 25
