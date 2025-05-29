@@ -1,5 +1,7 @@
 type: tank
 controller: ground
+template: ErekirUnitType
+flying: false
 health: 1500
 armor: 3
 speed: 0.8
@@ -11,5 +13,54 @@ targetAir: true
 targetGround: true
 rotate: true
 faceTarget: true
-weapons: [ @d1-darkling-weapon ]
+weapons: [
+    {
+      "name": "d1-darkling-weapon",
+      "top": true,
+      "y": 0,
+      "reload": 60,
+      "x": 6,
+      "mirror": true,
+      "alternate": false,
+      "shootSound": "shotgun",
+      "bullet": {
+        "type": "basicBulletType",
+        "sprite": "d1-darkling-weapon",
+        "damage": 25,
+        "pierceBuilding": false,
+        "pierce": false,
+        "trailColor": "f7c749",
+        "trailLength": 12,
+        "trailWidth": 2,
+        "speed": 3,
+        "shrinkY": 0,
+        "shrinkX": 0,
+        "width": 3,
+        "height": 3,
+        "lifetime": 40,
+        "lightColor": "f1ffa9",
+        "colorFrom": "f1ffa9",
+        "colorTo": "f7c749",
+        "fragBullets": 3,
+        "fragRandomSpread": 0,
+        "fragSpread": 10,
+        "fragBullet": {
+          "type": "basicBulletType",
+          "sprite": "d1-darkling-weapon",
+          "damage": 5,
+          "pierce": true,
+          "pierceBuilding": true,
+          "speed": 5,
+          "lifetime": 15,
+          "shrinkY": 0,
+          "shrinkX": 0,
+          "width": 2,
+          "height": 2,
+          "trailColor": "f7c749",
+          "trailLength": 6,
+          "trailWidth": 1,
+        }
+      }
+    }
+  ]
 research: stell
