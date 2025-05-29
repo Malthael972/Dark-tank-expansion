@@ -1,4 +1,5 @@
 type: Weapon
+name: mod-darkling-weapon
 mirror: true
 x: 6.5
 y: -1.5
@@ -9,8 +10,7 @@ rotateSpeed: 3
 inaccuracy: 2
 ejectEffect: none
 shootSound: shoot-smoke
-
-bullet:
+bullet: mod-darkling-bullet
   type: basic
   speed: 3.2
   lifetime: 35
