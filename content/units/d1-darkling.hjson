@@ -8,7 +8,7 @@ drag: 0.08
 hitSize: 12
 rotateSpeed: 3
 buildRange: 60
-itemCapacity: 10
+itemCapacity: 0
 targetAir: true
 targetGround: true
 rotate: true
