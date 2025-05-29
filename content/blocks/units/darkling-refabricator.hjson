@@ -4,7 +4,7 @@ size: 3
 health: 750
 constructTime: 1000
 upgrades: [
-  [d1-darkling, r2-regeneration]
+  [d1-darkling, d2-darkling]
 ]
 consumes: {
 power: 3.8
