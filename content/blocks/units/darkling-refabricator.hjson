@@ -2,7 +2,7 @@ type: Reconstructor
 regionSuffix: "-dark"
 size: 3
 health: 750
-constructTime: 1000
+constructTime: 1750
 upgrades: [
   [d1-darkling, d2-darkling]
 ]
@@ -14,9 +14,8 @@ liquid:{
 }
 items:{
   items: [
-    beryllium/30
-  silicon/60
-  tungsten/50
+  silicon/40
+  tungsten/30
   ]
 }
 }
@@ -32,7 +31,6 @@ objectives: [
 }
 requirements: [
   beryllium/400
-  silicon/280
-  oxide/90
-  tungsten/130
+  silicon/200
+  tungsten/160
 ]
