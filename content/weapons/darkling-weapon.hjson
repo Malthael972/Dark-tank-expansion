@@ -13,8 +13,8 @@ shootSound: shoot-smoke
 bullet:
   type: basic
   speed: 3.2
-  lifetime: 23
-  damage: 18
+  lifetime: 35
+  damage: 25
   knockback: 1.5
   width: 7
   height: 9
