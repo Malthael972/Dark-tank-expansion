@@ -2,13 +2,11 @@ type: tank
 controller: ground
 health: 1500
 armor: 3
-speed: 0.7
-accel: 0.08
-drag: 0.08
+speed: 0.8
+accel: 0.09
+drag: 0.09
 hitSize: 12
-rotateSpeed: 3
-buildRange: 60
-itemCapacity: 0
+rotateSpeed: 4
 targetAir: true
 targetGround: true
 rotate: true
