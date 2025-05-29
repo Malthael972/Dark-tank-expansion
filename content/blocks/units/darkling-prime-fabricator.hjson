@@ -1,6 +1,6 @@
 type: Reconstructor
 regionSuffix: "-dark"
-size: 3
+size: 5
 health: 750
 constructTime: 1000
 upgrades: [
@@ -9,7 +9,7 @@ upgrades: [
 consumes: {
 power: 3.8
 liquid:{
-    liquid: hydrogen
+    liquid: nitrogen
     amount: 0.09
 }
 items:{
