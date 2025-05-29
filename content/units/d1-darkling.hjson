@@ -13,5 +13,6 @@ targetAir: true
 targetGround: true
 rotate: true
 faceTarget: true
+targetFlags: [ any ]
 weapons: [ darkling-weapon ]
 research: stell
