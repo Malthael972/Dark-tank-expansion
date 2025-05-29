@@ -11,16 +11,5 @@ buildRange: 60
 itemCapacity: 10
 targetAir: true
 targetGround: true
-weapons: [
-  {
-    x: 0
-    y: 6
-    shootY: 0
-    reload: 20
-    rotate: false
-    mirror: false
-    shootSound: shootSmite
-    bullet: darkling-bullet
-  }
-]
+weapons: [ @darkling-weapon ]
 research: stell
