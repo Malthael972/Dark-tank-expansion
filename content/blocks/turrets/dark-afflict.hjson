@@ -40,6 +40,9 @@ shootType: {
   pierce: true
   pierceCap: 3
   buildingDamageMultiplier: 0.3
+  homingpower: 0.5
+  homingrange: 100
+  homingdelay: 0
   
   intervalBullet: {
     type: HomingBulletType
@@ -53,6 +56,9 @@ shootType: {
     hitColor: ec7458
     backColor: ec7458
     frontColor: ffd37f
+    homingpower: 0.5
+    homingrange: 100
+    homingdelay: 0
   }
   bulletInterval: 0.5
   
