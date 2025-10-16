@@ -24,6 +24,46 @@ shoot: {
 
 drawer: {
   type: DrawTurret
+  parts: [
+    {
+      type: RegionPart
+      suffix: -blade-l
+      progress: recoil
+      moveX: -1.5
+      moveY: -2
+      under: false
+      mirror: false
+      x: 0
+      y: 0
+      heatProgress: warmup
+      heatColor: ff6200ff
+    }
+    {
+      type: RegionPart
+      suffix: -blade-r
+      progress: recoil
+      moveX: 1.5
+      moveY: -2
+      under: false
+      mirror: false
+      x: 0
+      y: 0
+      heatProgress: warmup
+      heatColor: ff6200ff
+    }
+    {
+      type: RegionPart
+      suffix: -blade-heat
+      progress: warmup
+      under: false
+      mirror: false
+      x: 0
+      y: 0
+      layer: 110
+      color: ff6200ff
+      blending: additive
+    }
+  ]
 }
 
 shootType: {
