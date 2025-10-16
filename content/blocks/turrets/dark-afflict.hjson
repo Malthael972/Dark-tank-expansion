@@ -19,7 +19,7 @@ shoot: {
   type: ShootAlternate
   shotDelay: 5
   spread: 2.8
-  barrels: [0,-11,0],[0,11,0]
+  barrels:[0,-11,0],[0,11,0]
 }
 
 drawer: {
