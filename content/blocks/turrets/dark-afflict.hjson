@@ -24,7 +24,8 @@ shoot: {
 
 drawer: {
   type: DrawTurret
-  parts: [
+  parts: []
+}
 
 shootType: {
   type: BasicBulletType
