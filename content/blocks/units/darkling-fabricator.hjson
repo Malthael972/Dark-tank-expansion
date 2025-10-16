@@ -1,3 +1,4 @@
+name: "Dark Fabricator" 
 type: UnitFactory
 regionSuffix: "-dark"
 health: 615
