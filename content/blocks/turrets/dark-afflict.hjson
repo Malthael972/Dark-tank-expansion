@@ -17,9 +17,9 @@ shootCone: 15
 
 shoot: {
   type: ShootAlternate
-  shotDelay: 10
+  shotDelay: 5
   spread: 2.8
-  barrels: 2
+  barrels: [0,-11,0], [0,11,0]
 }
 
 drawer: {
