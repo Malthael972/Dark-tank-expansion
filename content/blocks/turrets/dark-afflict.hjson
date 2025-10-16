@@ -28,7 +28,7 @@ drawer: {
 }
 
 shootType: {
-  type: BasicBulletType
+  type: HomingBulletType
   speed: 3
   damage: 200
   lifetime: 100
@@ -42,7 +42,7 @@ shootType: {
   buildingDamageMultiplier: 0.3
   
   intervalBullet: {
-    type: BasicBulletType
+    type: HomingBulletType
     damage: 8
     width: 9
     height: 9
