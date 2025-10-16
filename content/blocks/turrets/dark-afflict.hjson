@@ -35,6 +35,7 @@ drawer: {
       mirror: false
       x: 0
       y: 0
+      layer: 1
     }
     {
       type: RegionPart
@@ -46,6 +47,7 @@ drawer: {
       mirror: false
       x: 0
       y: 0
+      layer: 1
     }
     {
       type: RegionPart
