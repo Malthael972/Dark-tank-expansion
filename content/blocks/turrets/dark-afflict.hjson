@@ -21,7 +21,7 @@ shoot: {
   shotDelay: 5
   spread: 2.8
   source: {
-  type: ShootSingle
+  type: ShootPattern
 }
 }
 
