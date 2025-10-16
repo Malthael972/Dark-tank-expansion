@@ -28,7 +28,7 @@ drawer: {
 }
 
 shootType: {
-  type: BasicBulletType
+  type: LaserBulletType
   speed: 3
   damage: 180
   lifetime: 100
