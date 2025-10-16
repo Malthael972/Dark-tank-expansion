@@ -145,6 +145,21 @@ requirements: [
   tungsten/200
   oxide/100
   carbide/40
+]  trailColor: ffd37f
+  trailLength: 8
+  trailWidth: 3
+}
+
+consumes: {
+  power: 20
+}
+
+category: turret
+requirements: [
+  silicon/250
+  tungsten/200
+  oxide/100
+  carbide/40
 ] turret
 requirements: [
   silicon/250
