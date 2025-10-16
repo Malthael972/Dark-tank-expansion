@@ -30,7 +30,7 @@ shootType: {
   type: BasicBulletType
   speed: 3
   damage: 180
-  lifetime: 20
+  lifetime: 100
   width: 18
   height: 18
   shrinkX: 0
@@ -47,7 +47,7 @@ shootType: {
     height: 9
     shrinkX: 0
     shrinkY: 0
-    lifetime: 16
+    lifetime: 32
     speed: 4.5
     hitColor: ec7458
     backColor: ec7458
@@ -60,7 +60,7 @@ shootType: {
     type: FlakBulletType
     damage: 15
     speed: 3
-    lifetime: 20
+    lifetime: 40
     width: 8
     height: 8
     splashDamageRadius: 8
