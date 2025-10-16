@@ -20,6 +20,9 @@ shoot: {
   shots: 2
   shotDelay: 5
   spread: 2.8
+  source: {
+  type: ShootSingle
+}
 }
 
 drawer: {
