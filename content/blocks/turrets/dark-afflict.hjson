@@ -27,16 +27,6 @@ drawer: {
   parts: [
     {
       type: RegionPart
-      name: dark-afflict
-      progress: recoil
-      moveY: 0
-      under: false
-      mirror: false
-      x: 0
-      y: 0
-    }
-    {
-      type: RegionPart
       suffix: -blade-l
       progress: recoil
       moveX: -1.5
