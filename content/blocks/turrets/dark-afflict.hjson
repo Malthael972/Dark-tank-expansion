@@ -33,9 +33,7 @@ drawer: {
       moveY: -2
       under: false
       mirror: false
-      x: 0
-      y: 0
-      layer: 5
+      outline: false
     }
     {
       type: RegionPart
@@ -45,9 +43,7 @@ drawer: {
       moveY: -2
       under: false
       mirror: false
-      x: 0
-      y: 0
-      layer: 5
+      outline: false
     }
     {
       type: RegionPart
@@ -55,8 +51,6 @@ drawer: {
       progress: warmup
       under: false
       mirror: false
-      x: 0
-      y: 0
       layer: 110
       color: ff6200ff
     }
@@ -66,8 +60,6 @@ drawer: {
       progress: warmup
       under: false
       mirror: false
-      x: 0
-      y: 0
       layer: 111
       color: ff6200ff
       blending: additive
