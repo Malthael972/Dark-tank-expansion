@@ -24,54 +24,7 @@ shoot: {
 
 drawer: {
   type: DrawTurret
-  parts: [
-    {
-      type: RegionPart
-      suffix: -blade-l
-      under: false
-      mirror: false
-      outline: false
-      moveRot: 0
-      moveX: 0
-      moveY: 0
-      x: 0
-      y: 0
-      rotation: 0
-    }
-    {
-      type: RegionPart
-      suffix: -blade-r
-      under: false
-      mirror: false
-      outline: false
-      moveRot: 0
-      moveX: 0
-      moveY: 0
-      x: 0
-      y: 0
-      rotation: 0
-    }
-    {
-      type: RegionPart
-      suffix: -blade-heat
-      progress: warmup
-      under: false
-      mirror: false
-      layer: 110
-      color: ff6200ff
-    }
-    {
-      type: RegionPart
-      suffix: -blade-glow-heat
-      progress: warmup
-      under: false
-      mirror: false
-      layer: 111
-      color: ff6200ff
-      blending: additive
-    }
-  ]
-}
+  parts: []
 
 shootType: {
   type: BasicBulletType
