@@ -27,7 +27,7 @@ drawer: {
   parts: [
     {
       type: RegionPart
-      name: "dark-afflict"
+      name: dark-afflict
       progress: recoil
       moveY: 0
       under: false
@@ -37,7 +37,7 @@ drawer: {
     }
     {
       type: RegionPart
-      suffix: "-blade-l"
+      suffix: -blade-l
       progress: recoil
       moveX: -1.5
       moveY: -2
@@ -48,7 +48,7 @@ drawer: {
     }
     {
       type: RegionPart
-      suffix: "-blade-r"
+      suffix: -blade-r
       progress: recoil
       moveX: 1.5
       moveY: -2
@@ -59,7 +59,7 @@ drawer: {
     }
     {
       type: RegionPart
-      suffix: "-blade-heat"
+      suffix: -blade-heat
       progress: warmup
       under: false
       mirror: false
@@ -70,7 +70,7 @@ drawer: {
     }
     {
       type: RegionPart
-      suffix: "-blade-glow-heat"
+      suffix: -blade-glow-heat
       progress: warmup
       under: false
       mirror: false
@@ -136,24 +136,10 @@ shootType: {
 }
 
 consumes: {
-  power: 4
+  power: 20
 }
 
 category: turret
-requirements: [
-  silicon/250
-  tungsten/200
-  oxide/100
-  carbide/40
-]
-
-category: turret
-requirements: [
-  silicon/250
-  tungsten/200
-  oxide/100
-  carbide/40
-] turret
 requirements: [
   silicon/250
   tungsten/200
