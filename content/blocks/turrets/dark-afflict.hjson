@@ -16,6 +16,8 @@ cooldownTime: 90
 shootCone: 15
 
 shoot: {
+  type: ShootMulti
+  source: {
   type: ShootAlternate
   shotDelay: 5
   shots: 1
@@ -30,6 +32,7 @@ type: ShootBarrel
 barrels: [-15, 11, 0]
 }
 ]
+}
 }
 
 drawer: {
