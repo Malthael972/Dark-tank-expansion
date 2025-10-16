@@ -16,10 +16,10 @@ cooldownTime: 90
 shootCone: 15
 
 shoot: {
-  type: ShootAlternate
+  type: ShootMulti
+  shots: 2
   shotDelay: 5
   spread: 2.8
-  barrels: 2
 }
 
 drawer: {
