@@ -9,66 +9,75 @@ rotateSpeed: 3.5
 targetAir: true
 targetGround: true
 coolantMultiplier: 1.5
-heatColor: "ff6200"
-shootSound: afflict-shoot
+heatColor: ff6200
+shootSound: shootBig
 recoil: 3
 cooldownTime: 90
-consumeHeat: 10
 shootCone: 15
-shootY: 3
-shots: 1
+
 shoot: {
-  shootX: 1.4
-  shootY: 3
-  mirror: true
-  ejectEffect: none
-  inaccuracy: 0
-  bullet: {
+  type: ShootAlternate
+  shotDelay: 10
+  spread: 2.8
+  barrels: 2
+}
+
+drawer: {
+  type: DrawTurret
+}
+
+bullet: {
+  type: BasicBulletType
+  speed: 3
+  damage: 180
+  lifetime: 20
+  width: 18
+  height: 18
+  shrinkX: 0
+  shrinkY: 0
+  spin: 2
+  pierce: true
+  pierceCap: 3
+  buildingDamageMultiplier: 0.3
+  
+  intervalBullet: {
     type: BasicBulletType
-    speed: 3
-    damage: 180
-    lifetime: 20
-    width: 18
-    height: 18
+    damage: 8
+    width: 9
+    height: 9
     shrinkX: 0
     shrinkY: 0
-    spin: 2
-    pierce: true
-    pierceCap: 3
-    buildingDamageMultiplier: 0.3
-    ammoMultiplier: 2
-    intervalBullets: 40
-    intervalBullet: {
-      type: BasicBulletType
-      damage: 8
-      width: 9
-      height: 9
-      shrinkX: 0
-      shrinkY: 0
-      lifetime: 16
-      speed: 4.5
-      hitColor: "ec7458"
-    }
-    fragBullets: 20
-    fragBullet: {
-      type: FlakBulletType
-      damage: 15
-      speed: 3
-      lifetime: 20
-      width: 8
-      height: 8
-      splashDamageRadius: 8
-      splashDamage: 20
-      hitColor: "ec7458"
-    }
-    hitColor: "ec7458"
-    backColor: "ec7458"
-    frontColor: "ffd37f"
-    trailColor: "ffd37f"
-    trailLength: 8
-    trailWidth: 3
+    lifetime: 16
+    speed: 4.5
+    hitColor: ec7458
+    backColor: ec7458
+    frontColor: ffd37f
   }
+  bulletInterval: 0.5
+  
+  fragBullets: 20
+  fragBullet: {
+    type: FlakBulletType
+    damage: 15
+    speed: 3
+    lifetime: 20
+    width: 8
+    height: 8
+    splashDamageRadius: 8
+    splashDamage: 20
+    hitColor: ec7458
+    backColor: ec7458
+    frontColor: ffd37f
+  }
+  
+  hitColor: ec7458
+  backColor: ec7458
+  frontColor: ffd37f
+  trailColor: ffd37f
+  trailLength: 8
+  trailWidth: 3
 }
+
 consumes: {
   power: 300
 }
@@ -80,29 +89,3 @@ requirements: [
   oxide/100
   carbide/40
 ]
-
-drawer: {
-  type: DrawTurret
-  base: dark-afflict-base
-  heat: dark-afflict-heat
-  parts: [
-    {
-      type: RegionPart
-      name: "dark-afflict"
-      moveY: -1.2
-      moveX: 1.1
-      mirror: true
-      x: 0
-      y: 1.1
-    }
-    {
-      type: RegionPart
-      name: "dark-afflict"
-      moveY: -1.2
-      moveX: -1.1
-      mirror: true
-      x: 0
-      y: 1.1
-    }
-  ]
-}
