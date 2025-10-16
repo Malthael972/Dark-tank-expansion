@@ -2,7 +2,7 @@ type: PowerTurret
 size: 4
 health: 4000
 reload: 100
-range: 340
+range: 4001
 inaccuracy: 1
 shootShake: 2
 rotateSpeed: 3.5
@@ -40,7 +40,7 @@ shootType: {
   pierce: true
   pierceCap: 3
   buildingDamageMultiplier: 0.3
-  homingpower: 0.5
+  homingpower: 10
   homingrange: 100
   homingdelay: 0
   
@@ -56,7 +56,7 @@ shootType: {
     hitColor: ec7458
     backColor: ec7458
     frontColor: ffd37f
-    homingpower: 0.5
+    homingpower: 10
     homingrange: 100
     homingdelay: 0
   }
@@ -75,6 +75,9 @@ shootType: {
     hitColor: ec7458
     backColor: ec7458
     frontColor: ffd37f
+    homingpower: 10
+    homingrange: 100
+    homingdelay: 0
   }
   
   hitColor: ec7458
