@@ -27,7 +27,7 @@ drawer: {
   parts: [
     {
       type: RegionPart
-      name: darkling-mod-dark-afflict-blade-l
+      suffix: -blade-l
       progress: recoil
       moveX: -1.5
       moveY: -2
@@ -39,7 +39,7 @@ drawer: {
     }
     {
       type: RegionPart
-      name: darkling-mod-dark-afflict-blade-r
+      suffix: -blade-r
       progress: recoil
       moveX: 1.5
       moveY: -2
@@ -51,7 +51,7 @@ drawer: {
     }
     {
       type: RegionPart
-      name: darkling-mod-dark-afflict-blade-heat
+      suffix: -blade-heat
       progress: warmup
       under: false
       mirror: false
@@ -62,7 +62,7 @@ drawer: {
     }
     {
       type: RegionPart
-      name: darkling-mod-dark-afflict-blade-glow-heat
+      suffix: -blade-glow-heat
       progress: warmup
       under: false
       mirror: false
