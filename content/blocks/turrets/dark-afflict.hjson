@@ -43,6 +43,11 @@ shootType: {
   homingPower: 0.2
   homingRange: 400
   homingDelay: 0
+  status: melting
+  statusDuration: 180
+  hitEffect: hitFlameSmall
+  lightColor: ff6200
+  heatColor: ff6200
   
   intervalBullet: {
     type: HomingBulletType
