@@ -1,3 +1,4 @@
+name: "D2 Darkling"
 type: tank
 controller: ground
 template: ErekirUnitType
