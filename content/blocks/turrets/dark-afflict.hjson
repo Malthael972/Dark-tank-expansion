@@ -92,7 +92,7 @@ shootType: {
 
 consumes: {
   power: 4
-  heat: .5
+  heat: 10
 }
 
 category: turret
