@@ -1,4 +1,4 @@
-type: PowerTurret
+  type: PowerTurret
 size: 4
 health: 4000
 reload: 100
@@ -27,7 +27,7 @@ drawer: {
   parts: [
     {
       type: RegionPart
-      suffix: -blade-l
+      name: darkling-mod-dark-afflict-blade-l
       progress: recoil
       moveX: -1.5
       moveY: -2
@@ -35,11 +35,10 @@ drawer: {
       mirror: false
       x: 0
       y: 0
-      layer: 1
     }
     {
       type: RegionPart
-      suffix: -blade-r
+      name: darkling-mod-dark-afflict-blade-r
       progress: recoil
       moveX: 1.5
       moveY: -2
@@ -47,11 +46,10 @@ drawer: {
       mirror: false
       x: 0
       y: 0
-      layer: 1
     }
     {
       type: RegionPart
-      suffix: -blade-heat
+      name: darkling-mod-dark-afflict-blade-heat
       progress: warmup
       under: false
       mirror: false
@@ -62,7 +60,7 @@ drawer: {
     }
     {
       type: RegionPart
-      suffix: -blade-glow-heat
+      name: darkling-mod-dark-afflict-blade-glow-heat
       progress: warmup
       under: false
       mirror: false
