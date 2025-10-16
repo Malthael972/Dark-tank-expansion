@@ -89,11 +89,6 @@ shootType: {
   trailWidth: 3
 }
 
-consumes: {
-  power: 4
-  heat: 10
-}
-
 category: turret
 requirements: [
   silicon/250
