@@ -22,12 +22,4 @@ requirements: [
   silicon/260
   beryllium/320
 ]
-research: {
-parent: tank-fabricator
-objectives: [
-  {
-    type: OnSector
-    preset: basin
-  }
-  ]
-}
+research: tank-fabricator
