@@ -1,0 +1,10 @@
+Blocks.mechanicalDrill.drillTime=90
+Blocks.pneumaticDrill.drillTime=90
+Blocks.laserDrill.drillTime=90
+Blocks.blastDrill.drillTime=90
+Blocks.plasmaBore.drillTime=90
+Blocks.impactDrill.drillTime=90
+Blocks.largePlasmaBore.drillTime=90
+Blocks.eruptionDrill.drillTime=90
+Blocks.eruptionDrill.drillTime=90
+Blocks.cliffCrusher.drillTime=90
