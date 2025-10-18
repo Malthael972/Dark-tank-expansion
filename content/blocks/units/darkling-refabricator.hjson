@@ -2,16 +2,16 @@ name: "Dark Refabricator"
 type: Reconstructor
 regionSuffix: "-dark"
 size: 3
-health: 750
+health: 900
 constructTime: 1750
 upgrades: [
   [d1-darkling, d2-darkling]
 ]
 consumes: {
-power: 3.8
+power: 3
 liquid:{
     liquid: hydrogen
-    amount: 0.09
+    amount: 0.05
 }
 items:{
   items: [
@@ -31,7 +31,7 @@ objectives: [
   ]
 }
 requirements: [
-  beryllium/400
-  silicon/200
-  tungsten/160
+  beryllium/200
+  silicon/100
+  tungsten/80
 ]
