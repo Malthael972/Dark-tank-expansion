@@ -8,7 +8,7 @@ upgrades: [
   [d2-darkling, d3-darkling]
 ]
 consumes: {
-power: 3.8
+power: 3
 liquid:{
     liquid: nitrogen
     amount: 0.09
@@ -31,7 +31,7 @@ objectives: [
   ]
 }
 requirements: [
-  thorium/400
+  thorium/250
   silicon/400
   oxide/200
   tungsten/200
