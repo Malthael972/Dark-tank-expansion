@@ -2,8 +2,8 @@ name: "Dark Prime Fabricator"
 type: Reconstructor
 regionSuffix: "-dark"
 size: 5
-health: 1500
-constructTime: 2000
+health: 2500
+constructTime: 3500
 upgrades: [
   [d2-darkling, d3-darkling]
 ]
@@ -11,19 +11,18 @@ consumes: {
 power: 3
 liquid:{
     liquid: nitrogen
-    amount: 0.09
+    amount: 0.08
 }
 items:{
   items: [
-    thorium/80
+  thorium/80
   silicon/100
   ]
 }
 }
-category: units
-research: {
-parent: prime-refabricator]
-requirements: [
+category: units1
+research: prime-refabricator
+
   thorium/250
   silicon/400
   oxide/200
