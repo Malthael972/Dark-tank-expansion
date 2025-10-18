@@ -5,7 +5,7 @@ health: 615
 size: 3
 configurable: false
 consumes: {
-power: 4.2
+power: 1
 }
 plans: [
   {
@@ -14,12 +14,12 @@ plans: [
       silicon/50
       beryllium/40
     ]
-    time: 1500
+    time: 1750
   }
 ]
 category: units
 requirements: [
-  silicon/260
-  beryllium/320
+  silicon/150
+  beryllium/200
 ]
 research: tank-fabricator
