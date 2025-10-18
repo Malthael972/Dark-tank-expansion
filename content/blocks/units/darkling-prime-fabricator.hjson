@@ -22,14 +22,7 @@ items:{
 }
 category: units
 research: {
-parent: heal-fabricator
-objectives: [
-  {
-    type: OnSector
-    preset: basin
-  }
-  ]
-}
+parent: prime-refabricator]
 requirements: [
   thorium/250
   silicon/400
