@@ -2,7 +2,7 @@ name: "D1 Darkling"
 type: tank
 template: ErekirUnitType
 flying: false
-health: 850
+health: 900
 armor: 6
 speed: 0.75
 accel: 0.09
