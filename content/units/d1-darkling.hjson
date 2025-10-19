@@ -21,7 +21,7 @@ weapons: [
   {
     name: d1-darkling-weapon
     layerOffset: 0.0001
-    reload: 100
+    reload: 50
     shootY: 4.5
     recoil: 1
     rotate: true
@@ -41,7 +41,9 @@ weapons: [
       width: 5
       height: 7
       speed: 4
-      damage: 20
+      damage: 30
+      splashDamage:10
+      splashDamageRadius:16
       lifetime: 40
       hitSize: 4
       hitColor: ff0000
