@@ -23,12 +23,7 @@ requirements: [
   beryllium/320
   tungsten/140
 ]
-research: {
-parent: tank-fabricator
-objectives: [
-  {
-    type: OnSector
-    preset: basin
-  }
-  ]
-}
+research: tank-fabricator
+research cost: [
+beryllium/15
+]
