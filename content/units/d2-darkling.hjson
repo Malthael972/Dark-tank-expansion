@@ -22,7 +22,7 @@ weapons: [
     name: d2-darkling-weapon
     shootSound: bolt
     layerOffset: 0.0001
-    reload: 35.2941
+    reload: 9
     shootY: 10
     recoil: 1
     rotate: true
