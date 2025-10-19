@@ -15,7 +15,6 @@ itemCapacity: 0
 lowAltitude: true
 weapons: [
   {
-    name: a3-darkling-weapon
     shootSound: shockBlast
     x: 4
     y: -2
