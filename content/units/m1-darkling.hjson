@@ -45,6 +45,7 @@ weapons: [
     alternate: false
     bullet: {
       type: ArtilleryBulletType
+      sprite: Missle-large
       speed: 3
       damage: 40
       shootEffect: shootSmallColor
