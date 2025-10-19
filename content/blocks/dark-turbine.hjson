@@ -14,22 +14,11 @@ consumeLiquid:
   liquid: water
   amount: 5
 drawer:
-  type: DrawMulti
-  drawers: [
-    {
-      type: DrawDefault
-    }
-    {
-      type: DrawLiquidTile
-      liquid: water
-      color: "6ec6ff"
-    }
-  ]
+  type: DrawLiquidTile
+  liquid: water
+  color: "6ec6ff"
 requirements: [
-  tungsten/80
-  silicon/120
-  thorium/60
-  carbide/40
+  beryllium: 60
 ]
 category: power
 research: Liquid-Turbine
