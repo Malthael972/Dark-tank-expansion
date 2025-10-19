@@ -1,0 +1,29 @@
+name: "M2 Refabricator"
+type: Reconstructor
+regionSuffix: "-dark"
+size: 3
+health: 900
+constructTime: 1750
+upgrades: [
+  [m1-darkling, m2-darkling]
+]
+consumes: {
+power: 3
+liquid:{
+    liquid: hydrogen
+    amount: 0.05
+}
+items:{
+  items: [
+  silicon/50
+  tungsten/40
+  ]
+}
+}
+category: units
+research: Tank-Refabricator
+requirements: [
+  beryllium/250
+  silicon/150
+  tungsten/175
+]
