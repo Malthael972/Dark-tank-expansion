@@ -21,7 +21,7 @@ weapons: [
     name: d3-darkling-weapon
     shootSound: dullExplosion
     layerOffset: 0.0001
-    reload: 120
+    reload: 35.2941
     shootY: 16
     recoil: 3
     shake: 2
@@ -57,7 +57,7 @@ weapons: [
       shootEffect: shootTitan
       smokeEffect: shootSmokeTitan
       splashDamageRadius: 20
-      splashDamage: 25
+      splashDamage: 50
       trailEffect: hitSquaresColor
       trailRotation: true
       trailInterval: 3
