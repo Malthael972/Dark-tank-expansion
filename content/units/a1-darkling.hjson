@@ -1,5 +1,6 @@
 name: "A1 Darkling"
-type: ErekirUnitType
+type: flying
+template: ErekirUnitType
 hovering: true
 canDrown: false
 shadowElevation: 0.1
