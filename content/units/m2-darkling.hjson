@@ -1,4 +1,4 @@
-name: "D5 Darkling"
+name: "M2 Darkling"
 type: ErekirUnitType
 flying: false
 speed: 0.6
@@ -24,7 +24,7 @@ shadowElevation: 0.2
 groundLayer: 60
 weapons: [
   {
-    name: d5-darkling-weapon
+    name: m2-darkling-weapon
     shootSound: blaster
     x: 3.5
     y: 8.25
@@ -79,11 +79,5 @@ weapons: [
       damage: 38
     }
   }
-]
-requirements: [
-  beryllium/250
-  graphite/200
-  silicon/180
-  tungsten/100
 ]
 research: cleroi
