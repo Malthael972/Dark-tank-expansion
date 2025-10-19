@@ -1,0 +1,73 @@
+name: "M3 Darkling"
+type: ErekirUnitType
+flying: false
+speed: 0.65
+drag: 0.1
+hitSize: 21
+rotateSpeed: 3
+health: 2900
+armor: 7
+fogRadius: 40
+stepShake: 0
+legCount: 6
+legLength: 18
+legGroupSize: 3
+lockLegBase: true
+legContinuousMove: true
+legExtension: -3
+legBaseOffset: 7
+legMaxLength: 1.1
+legMinLength: 0.2
+legLengthScl: 0.95
+legForwardScl: 0.9
+legMoveSpace: 1
+hovering: true
+shadowElevation: 0.2
+groundLayer: 60
+weapons: [
+  {
+    name: m3-darkling-weapon
+    shootSound: missileLarge
+    x: 7.25
+    y: -2.75
+    shootY: 1.5
+    showStatSprite: false
+    reload: 130
+    layerOffset: 0.01
+    heatColor: ff0000
+    cooldownTime: 60
+    smoothReloadSpeed: 0.15
+    shootWarmupSpeed: 0.05
+    minWarmup: 0.9
+    rotationLimit: 70
+    rotateSpeed: 2
+    inaccuracy: 20
+    shootStatus: slow
+    alwaysShootWhenMoving: true
+    rotate: true
+    mirror: true
+    alternate: false
+    shoot: {
+      shots: 2
+      shotDelay: 6
+    }
+    bullet: {
+      type: BulletType
+      shootEffect: shootBigColor
+      smokeEffect: shootBigSmoke2
+      shake: 2
+      speed: 0
+      keepVelocity: false
+      inaccuracy: 2
+      spawnUnit: anthicus-missile
+    }
+  }
+]
+requirements: [
+  beryllium/500
+  graphite/400
+  silicon/450
+  tungsten/350
+  thorium/200
+]
+research: anthicus
