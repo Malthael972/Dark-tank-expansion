@@ -1,5 +1,5 @@
 name: "Dark Prime Fabricator"
-type: Reconstructor
+type: reconstructor
 regionSuffix: "-dark"
 size: 5
 health: 2500
