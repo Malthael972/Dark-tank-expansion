@@ -1,0 +1,37 @@
+type: HeatGenerator
+name: turbine-condenser
+localizedName: Turbine Condenser
+description: Generates large amounts of power by condensing internal heat into water. Prototype version—does not require a vent.
+planet: erekir
+size: 3
+health: 575
+solid: true
+hasLiquids: true
+hasPower: true
+alwaysUnlocked: true
+generateEffect: steam
+ambientSound: reactor
+ambientSoundVolume: 0.07
+powerProduction: 123.33
+outputsLiquid: true
+liquidCapacity: 60
+outputLiquid:
+  liquid: water
+  amount: 0.5
+heatRequirement: 0.2
+heatOutput: 0.4
+drawer:
+  type: DrawMulti
+  drawers: [
+    { type: DrawDefault },
+    { type: DrawHeatRegion, suffix: -heat },
+    { type: DrawLiquidTile, liquid: water, color: 6ec6ff }
+  ]
+requirements: [
+  tungsten/80
+  silicon/120
+  thorium/60
+  carbide/40
+]
+category: power
+research: Turbine-Condenser
