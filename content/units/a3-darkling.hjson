@@ -1,6 +1,6 @@
 name: "A3 Darkling"
-type: ErekirUnitType
-constructor: ElevationMoveUnit
+type: flying
+template: ErekirUnitType
 flying: true
 drag: 0.08
 speed: 1.8
