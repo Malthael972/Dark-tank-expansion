@@ -1,67 +1,64 @@
 name: "D1 Darkling"
 type: tank
-controller: ground
 template: ErekirUnitType
 flying: false
-health: 1500
-armor: 3
-speed: 0.8
+health: 850
+armor: 6
+speed: 0.75
 accel: 0.09
 drag: 0.09
 hitSize: 12
-rotateSpeed: 4
+treadPullOffset: 3
+rotateSpeed: 3.5
 targetAir: true
 targetGround: true
 rotate: true
 faceTarget: true
+itemCapacity: 0
+floorMultiplier: 0.95
+researchCostMultiplier: 0
 weapons: [
-    {
-      "name": "d1-darkling-weapon",
-      "top": true,
-      "y": 0,
-      "reload": 60,
-      "x": 6,
-      "mirror": true,
-      "alternate": false,
-      "shootSound": "shotgun",
-      "bullet": {
-        "type": "basicBulletType",
-        "sprite": "circle",
-        "damage": 30,
-        "pierceBuilding": false,
-        "pierce": false,
-        "trailColor": "f7c749",
-        "trailLength": 12,
-        "trailWidth": 2,
-        "speed": 4,
-        "shrinkY": 0,
-        "shrinkX": 0,
-        "width": 3,
-        "height": 3,
-        "lifetime": 60,
-        "lightColor": "f1ffa9",
-        "colorFrom": "f1ffa9",
-        "colorTo": "f7c749",
-        "fragBullets": 6,
-        "fragRandomSpread": 0,
-        "fragSpread": 10,
-        "fragBullet": {
-          "type": "basicBulletType",
-          "sprite": "cirlce",
-          "damage": 10,
-          "pierce": true,
-          "pierceBuilding": true,
-          "speed": 5,
-          "lifetime": 15,
-          "shrinkY": 0,
-          "shrinkX": 0,
-          "width": 2,
-          "height": 2,
-          "trailColor": "f7c749",
-          "trailLength": 6,
-          "trailWidth": 1,
-        }
-      }
+  {
+    name: d1-darkling-weapon
+    layerOffset: 0.0001
+    reload: 100
+    shootY: 4.5
+    recoil: 1
+    rotate: true
+    rotateSpeed: 2.2
+    mirror: true
+    alternate: false
+    x: 6
+    y: -0.75
+    heatColor: f9350f
+    cooldownTime: 30
+    shootSound: missile
+    bullet: {
+      type: basicBulletType
+      sprite: missile-large
+      smokeEffect: shootBigSmoke
+      shootEffect: shootBigColor
+      width: 5
+      height: 7
+      speed: 4
+      damage: 20
+      lifetime: 40
+      hitSize: 4
+      hitColor: ff0000
+      backColor: ff0000
+      trailColor: ff0000
+      frontColor: ffffff
+      trailWidth: 1.7
+      trailLength: 5
+      despawnEffect: hitBulletColor
+      hitEffect: hitBulletColor
+      shrinkY: 0
+      shrinkX: 0
     }
-  ]
+  }
+]
+requirements: [
+  graphite/30
+  silicon/40
+]
 research: stell
