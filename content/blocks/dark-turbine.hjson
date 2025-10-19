@@ -1,4 +1,3 @@
-// dark-turbine.hjson
 type: ThermalGenerator
 name: "Dark Turbine"
 description: "A mysterious power generator that condenses dark steam into pure energy."
