@@ -6,6 +6,8 @@ health: 2500
 constructTime: 3500
 upgrades: [
   [d2-darkling, d3-darkling]
+  [m2-darkling, m3-darkling]
+  [a2-darkling, a3-darkling]
 ]
 consumes: {
 power: 3
