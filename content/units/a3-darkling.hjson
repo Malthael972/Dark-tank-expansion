@@ -13,6 +13,48 @@ engineOffset: 13.5
 fogRadius: 25
 itemCapacity: 0
 lowAltitude: true
+
+parts: [
+  {
+    type: RegionPart
+    suffix: -blade
+    moveRot: -10
+    moveX: -1
+    progress: {
+      type: warmup
+    }
+    mirror: true
+    children: [
+      {
+        type: RegionPart
+        suffix: -side
+        moveX: 2
+        moveY: -2
+        progress: {
+          type: warmup
+        }
+        under: true
+        mirror: true
+      }
+    ]
+  }
+]
+
+engines: [
+  {
+    x: 6.25
+    y: -6.75
+    radius: 2.15
+    rotation: 315
+  }
+  {
+    x: -6.25
+    y: -6.75
+    radius: 2.15
+    rotation: 225
+  }
+]
+
 weapons: [
   {
     shootSound: shockBlast
@@ -81,4 +123,4 @@ weapons: [
     }
   }
 ]
-research: avert
+research: obviate
