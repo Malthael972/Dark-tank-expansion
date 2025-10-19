@@ -54,9 +54,4 @@ weapons: [
     }
   }
 ]
-requirements: [
-  beryllium/200
-  graphite/150
-  silicon/100
-]
 research: locus
