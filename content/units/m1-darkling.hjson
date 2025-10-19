@@ -10,6 +10,7 @@ health: 680
 armor: 4
 legStraightness: 0.3
 stepShake: 0
+drawBody: false
 legCount: 6
 legLength: 8
 lockLegBase: true
