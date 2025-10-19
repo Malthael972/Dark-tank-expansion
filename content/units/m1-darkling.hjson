@@ -31,6 +31,45 @@ groundLayer: 60
 targetAir: false
 researchCostMultiplier: 0
 weapons: [
+{
+    name: m1-darkling-weapon
+    shootSound: missile
+    mirror: true
+    showStatSprite: false
+    x: -4
+    y: -1
+    shootY: 4
+    reload: 30
+    cooldownTime: 42
+    heatColor: f9350f
+    alternate: false
+    bullet: {
+      type: ArtilleryBulletType
+      sprite: Missle-large
+      speed: 3
+      damage: 40
+      shootEffect: shootSmallColor
+      collidesTiles: true
+      backColor: ff0000
+      hitColor: ff0000
+      frontColor: ffffff
+      knockback: 0.8
+      lifetime: 46
+      width: 9
+      height: 9
+      splashDamageRadius: 19
+      splashDamage: 30
+      trailLength: 27
+      trailWidth: 2.5
+      trailEffect: none
+      trailColor: ff0000
+      trailInterp: slope
+      shrinkX: 0.6
+      shrinkY: 0.2
+      hitEffect: hitSquaresColor
+      despawnEffect: hitSquaresColor
+    }
+  }
   {
     name: m1-darkling-weapon
     shootSound: missile
