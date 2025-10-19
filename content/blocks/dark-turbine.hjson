@@ -23,9 +23,18 @@ heatOutput: 0.4
 drawer:
   type: DrawMulti
   drawers: [
-    { type: DrawDefault },
-    { type: DrawHeatRegion, suffix: -heat },
-    { type: DrawLiquidTile, liquid: water, color: 6ec6ff }
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawHeatRegion
+      suffix: "-heat"
+    }
+    {
+      type: DrawLiquidTile
+      liquid: water
+      color: "6ec6ff"
+    }
   ]
 requirements: [
   tungsten/80
