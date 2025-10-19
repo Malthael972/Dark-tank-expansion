@@ -23,6 +23,6 @@ requirements: [
   beryllium/200
 ]
 research: tank-fabricator
-research cost: [
+researchCost: [
 beryllium/15
 ]
