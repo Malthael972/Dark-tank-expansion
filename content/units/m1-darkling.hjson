@@ -69,9 +69,5 @@ weapons: [
     }
   }
 ]
-requirements: [
-  beryllium/80
-  graphite/50
-  silicon/65
-]
+
 research: merui
