@@ -4,11 +4,11 @@ controller: RepairAI
 defaultCommand: repair
 lowAltitude: false
 mineWalls: true
-mineFloor: false
+mineFloor: true
 mineHardnessScaling: false
 flying: true
 mineSpeed: 10
-mineTier: 3
+mineTier: 4
 drag: 0.08
 speed: 7
 rotateSpeed: 9
@@ -20,7 +20,7 @@ fogRadius: 4
 engineSize: 3.6
 engineOffset: 5
 engineColor: 84f491
-envEnabled: 17
+envEnabled: 63
 envDisabled: 0
 outlineColor: "2d2f39"
 engines: [
