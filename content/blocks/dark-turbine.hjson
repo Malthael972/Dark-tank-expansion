@@ -1,7 +1,8 @@
+// dark-turbine.hjson
 type: ThermalGenerator
-name: Dark Turbine
-description: A mysterious power generator that condenses dark steam into pure energy.
-details: Functions identically to the standard Turbine Condenser but radiates ominous energy.
+name: "Dark Turbine"
+description: "A mysterious power generator that condenses dark steam into pure energy."
+details: "Functions identically to the standard Turbine Condenser but radiates ominous energy."
 category: power
 group: liquids
 size: 3
@@ -33,10 +34,17 @@ fogRadius: 3
 
 drawer: {
   type: DrawMulti
+
   draws: [
-    { type: DrawDefault },
-    { type: DrawSpinRegion, suffix: "-rotator", rotateSpeed: 5.4 }
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawSpinRegion
+      suffix: "-rotator"
+      rotateSpeed: 5.4
+    }
   ]
 }
 
-sprite: dark-turbine
+sprite: "dark-turbine"
