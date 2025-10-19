@@ -1,4 +1,4 @@
-name: "d3 Fabricator" 
+name: "m1 Fabricator" 
 type: UnitFactory
 regionSuffix: "-dark"
 health: 615
