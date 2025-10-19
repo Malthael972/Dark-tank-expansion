@@ -1,69 +1,94 @@
 name: "D3 Darkling"
 type: tank
-controller: ground
 template: ErekirUnitType
 flying: false
-health: 4500
-armor: 15
-speed: 0.85
+health: 5250
+armor: 12
+speed: 0.64
 accel: 0.1
 drag: 0.08
-hitSize: 26  # 3.25x3.25 tiles = 26px
-rotateSpeed: 5
+hitSize: 24
+rotateSpeed: 1.5
 targetAir: true
 targetGround: true
 rotate: true
 faceTarget: true
+floorMultiplier: 0.65
+drownTimeMultiplier: 1.2
+immunities: [burning, melting]
 weapons: [
   {
     name: d3-darkling-weapon
-    top: true
-    y: 0
-    x: 8
+    shootSound: dullExplosion
+    layerOffset: 0.0001
+    reload: 160
+    shootY: 16
+    recoil: 3
+    shake: 2
+    rotate: true
+    rotateSpeed: 1.625
     mirror: true
-    reload: 15
-    shootSound: railgun
     alternate: false
-    bullet: {
+    shootCone: 2
+    x: 8
+    y: -1
+    heatColor: f9350f
+    cooldownTime: 30
+      bullet: {
       type: basicBulletType
-      sprite: circle
-      damage: 80
-      pierceBuilding: false
+      sprite: missile-large
+      speed: 7
+      damage: 120
+      width: 7.5
+      height: 13
+      lifetime: 28
+      hitSize: 6
+      pierceCap: 2
       pierce: true
-      speed: 5
-      lifetime: 85
-      width: 5
-      height: 7
-      shrinkX: 0
-      shrinkY: 0
+      pierceBuilding: true
+      hitColor: ff0000
+      backColor: ff0000
       trailColor: ff0000
-      trailLength: 14
-      trailWidth: 2.2
-      lightColor: ff0000
-      frontColor: ff0000   // red
-      backColor: 000000    // black
-      fragBullets: 15
-      fragRandomSpread: 0
-      fragSpread: 10
+      frontColor: ffffff
+      trailWidth: 2.8
+      trailLength: 8
+      hitEffect: blastExplosion
+      despawnEffect: blastExplosion
+      shootEffect: shootTitan
+      smokeEffect: shootSmokeTitan
+      splashDamageRadius: 20
+      splashDamage: 50
+      trailEffect: hitSquaresColor
+      trailRotation: true
+      trailInterval: 3
+      fragBullets: 4
       fragBullet: {
         type: basicBulletType
-        sprite: circle
-        damage: 25
+        sprite: missile-large
+        speed: 5
+        damage: 35
+        width: 5
+        height: 7
+        lifetime: 15
+        hitSize: 4
+        pierceCap: 3
         pierce: true
         pierceBuilding: true
-        speed: 5.5
-        lifetime: 22
-        shrinkX: 0
-        shrinkY: 0
-        width: 2.5
-        height: 2.5
+        hitColor: ff0000
+        backColor: ff0000
         trailColor: ff0000
-        trailLength: 7
-        trailWidth: 1.2
-        frontColor: ff0000   // red
-        backColor: 000000    // black
+        frontColor: ffffff
+        trailWidth: 1.7
+        trailLength: 3
+        drag: 0.01
+        despawnEffect: hitBulletColor
+        hitEffect: hitBulletColor
       }
     }
   }
+]
+requirements: [
+  thorium/80
+  silicon/100
 ]
 research: precept
