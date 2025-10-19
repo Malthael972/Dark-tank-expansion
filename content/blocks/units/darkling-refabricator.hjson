@@ -22,6 +22,9 @@ items:{
 }
 category: units
 research: Tank-Refabricator
+research cost: [
+beryllium/15
+]
 requirements: [
   beryllium/200
   silicon/100
