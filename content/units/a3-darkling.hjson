@@ -1,5 +1,6 @@
 name: "A3 Darkling"
-type: ErekirUnitType
+type: flying
+template: ErekirUnitType
 aiController: FlyingFollowAI
 envDisabled: 0
 lowAltitude: false
