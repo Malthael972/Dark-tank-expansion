@@ -19,7 +19,7 @@ hitSize: 11
 fogRadius: 4
 engineSize: 0 
 engineColor: 84f491
-envEnabled: 17
+envEnabled: 63
 envDisabled: 0
 outlineColor: "2d2f39"
 engines: [
