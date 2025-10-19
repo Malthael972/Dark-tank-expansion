@@ -12,14 +12,14 @@ alwaysUnlocked: true
 generateEffect: steam
 ambientSound: reactor
 ambientSoundVolume: 0.07
-powerProduction: 123.33
+powerProduction: 7400
 outputsLiquid: true
 liquidCapacity: 60
 outputLiquid:
   liquid: water
-  amount: 0.5
-heatRequirement: 0.2
-heatOutput: 0.4
+  amount: 30
+heatRequirement: 0
+heatOutput: 0
 drawer:
   type: DrawMulti
   drawers: [
