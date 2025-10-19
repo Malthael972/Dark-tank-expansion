@@ -77,11 +77,4 @@ weapons: [
     }
   }
 ]
-requirements: [
-  beryllium/800
-  graphite/600
-  silicon/700
-  tungsten/500
-  oxide/100
-]
 research: quell
