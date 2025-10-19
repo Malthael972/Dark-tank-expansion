@@ -2,8 +2,8 @@ name: "D3 Darkling"
 type: tank
 template: ErekirUnitType
 flying: false
-health: 5250
-armor: 12
+health: 5000
+armor: 11
 speed: 0.64
 accel: 0.1
 drag: 0.08
@@ -34,11 +34,11 @@ weapons: [
     y: -1
     heatColor: f9350f
     cooldownTime: 30
-      bullet: {
+    bullet: {
       type: basicBulletType
       sprite: missile-large
       speed: 7
-      damage: 120
+      damage: 60
       width: 7.5
       height: 13
       lifetime: 28
@@ -57,7 +57,7 @@ weapons: [
       shootEffect: shootTitan
       smokeEffect: shootSmokeTitan
       splashDamageRadius: 20
-      splashDamage: 50
+      splashDamage: 25
       trailEffect: hitSquaresColor
       trailRotation: true
       trailInterval: 3
@@ -66,7 +66,7 @@ weapons: [
         type: basicBulletType
         sprite: missile-large
         speed: 5
-        damage: 35
+        damage: 17.5
         width: 5
         height: 7
         lifetime: 15
