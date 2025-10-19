@@ -6,16 +6,13 @@ category: power
 group: liquids
 size: 3
 health: 760
-
 requirements: [
   beryllium/60
 ]
-
 research: turbine-condenser
 researchCost: [
   beryllium/15
 ]
-
 attribute: steam
 displayEfficiencyScale: 0.111
 minEfficiency: 8.999
@@ -25,15 +22,12 @@ effectChance: 0.04
 generateEffect: turbinegenerate
 ambientSound: hum
 ambientSoundVolume: 0.06
-
 hasLiquids: true
 outputLiquid: water/0.009
 liquidCapacity: 20
 fogRadius: 3
-
 drawer: {
   type: DrawMulti
-
   draws: [
     {
       type: DrawDefault
@@ -45,5 +39,4 @@ drawer: {
     }
   ]
 }
-
 sprite: "dark-turbine"
