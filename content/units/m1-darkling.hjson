@@ -1,4 +1,4 @@
-name: "M3 Darkling"
+name: "M1 Darkling"
 type: ErekirUnitType
 flying: false
 speed: 0.72
@@ -31,7 +31,7 @@ targetAir: false
 researchCostMultiplier: 0
 weapons: [
   {
-    name: m3-darkling-weapon
+    name: m1-darkling-weapon
     shootSound: missile
     mirror: true
     showStatSprite: false
