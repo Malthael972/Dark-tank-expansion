@@ -1,0 +1,71 @@
+name: "A2 Darkling"
+type: ErekirUnitType
+lowAltitude: false
+flying: true
+drag: 0.08
+speed: 2
+rotateSpeed: 8
+accel: 0.09
+health: 1100
+armor: 3
+hitSize: 12
+engineSize: 0
+fogRadius: 25
+itemCapacity: 0
+setEnginesMirror: [
+  {
+    x: 8.75
+    y: -9.5
+    radius: 3
+    rotation: 315
+  }
+  {
+    x: 9.75
+    y: -4
+    radius: 3
+    rotation: 315
+  }
+]
+weapons: [
+  {
+    name: A2-darkling-weapon
+    shootSound: blaster
+    reload: 17.5
+    x: 4
+    y: 6.5
+    shootY: 5
+    recoil: 1
+    top: false
+    layerOffset: -0.01
+    rotate: false
+    mirror: true
+    alternate: false
+    shoot: {
+      type: ShootHelix
+    }
+    bullet: {
+      type: BasicBulletType
+      speed: 5
+      damage: 34
+      width: 7
+      height: 12
+      lifetime: 18
+      shootEffect: sparkShoot
+      smokeEffect: shootBigSmoke
+      hitColor: ff0000
+      backColor: ff0000
+      trailColor: ff0000
+      frontColor: ffffff
+      trailWidth: 1.5
+      trailLength: 5
+      hitEffect: hitBulletColor
+      despawnEffect: hitBulletColor
+    }
+  }
+]
+requirements: [
+  beryllium/150
+  graphite/120
+  silicon/100
+]
+research: avert
