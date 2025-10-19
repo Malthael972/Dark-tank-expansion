@@ -1,5 +1,6 @@
 name: "A3 Darkling"
 type: ErekirUnitType
+constructor: UnitEntity
 flying: true
 drag: 0.08
 speed: 1.8
@@ -123,4 +124,4 @@ weapons: [
     }
   }
 ]
-research: obviate
+research: avert
