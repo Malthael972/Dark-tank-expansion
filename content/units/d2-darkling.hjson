@@ -1,67 +1,62 @@
 name: "D2 Darkling"
 type: tank
-controller: ground
 template: ErekirUnitType
 flying: false
-health: 2500
-armor: 10
-speed: 0.9
-accel: 0.1
-drag: 0.08
+health: 2100
+armor: 8
+speed: 0.7
+accel: 0.09
+drag: 0.09
 hitSize: 18
-rotateSpeed: 5
+treadPullOffset: 5
+rotateSpeed: 2.6
 targetAir: true
 targetGround: true
 rotate: true
 faceTarget: true
+itemCapacity: 0
+floorMultiplier: 0.8
+researchCostMultiplier: 0
 weapons: [
   {
     name: d2-darkling-weapon
-    top: true
-    y: 0
-    x: 6
+    shootSound: bolt
+    layerOffset: 0.0001
+    reload: 36
+    shootY: 10
+    recoil: 1
+    rotate: true
+    rotateSpeed: 1.4
     mirror: true
-    reload: 18  // 60 / 3.33 = ~18 ticks for 3.33 shots/sec
-    shootSound: railgun
     alternate: false
+    shootCone: 2
+    x: 6
+    y: 0
+    heatColor: f9350f
+    cooldownTime: 30
     bullet: {
-      type: basicBulletType
-      sprite: circle
-      damage: 50
-      pierceBuilding: false
-      pierce: true
-      speed: 4.5
-      lifetime: 75  // 4.5 × 4.22 = ~19 blocks (Locus vanilla range)
-      width: 4
-      height: 6
-      shrinkX: 0
-      shrinkY: 0
-      trailColor: f7c749
-      trailLength: 12
-      trailWidth: 2
-      lightColor: f1ffa9
-      colorFrom: f1ffa9
-      colorTo: f7c749
-      fragBullets: 10
-      fragRandomSpread: 0
-      fragSpread: 10
-      fragBullet: {
-        type: basicBulletType
-        sprite: circle
-        damage: 15
-        pierce: true
-        pierceBuilding: true
-        speed: 5
+      type: RailBulletType
+      length: 160
+      damage: 24
+      hitColor: ff0000
+      hitEffect: hitBulletColor
+      endEffect: hitBulletColor
+      pierceDamageFactor: 0.8
+      smokeEffect: colorSpark
+      shootEffect: {
+        type: Effect
+        lifetime: 10
+      }
+      lineEffect: {
+        type: Effect
         lifetime: 20
-        shrinkX: 0
-        shrinkY: 0
-        width: 2
-        height: 2
-        trailColor: f7c749
-        trailLength: 6
-        trailWidth: 1
       }
     }
   }
 ]
-research: precept
+requirements: [
+  beryllium/200
+  graphite/150
+  silicon/100
+]
+research: locus
