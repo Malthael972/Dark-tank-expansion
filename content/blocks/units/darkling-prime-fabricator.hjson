@@ -20,7 +20,7 @@ items:{
   ]
 }
 }
-category: units1
+category: units
 research: prime-refabricator
 requirements: [
   thorium/250
