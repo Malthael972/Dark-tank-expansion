@@ -1,0 +1,85 @@
+name: "A3 Darkling"
+type: ErekirUnitType
+flying: true
+drag: 0.08
+speed: 1.8
+rotateSpeed: 2.5
+accel: 0.09
+health: 2300
+armor: 6
+hitSize: 25
+engineSize: 4.3
+engineOffset: 13.5
+fogRadius: 25
+itemCapacity: 0
+lowAltitude: true
+weapons: [
+  {
+    name: a3-darkling-weapon
+    shootSound: shockBlast
+    x: 4
+    y: -2
+    shootY: 0
+    reload: 70
+    mirror: true
+    alternate: false
+    minWarmup: 0.95
+    shake: 3
+    cooldownTime: 130
+    rotate: false
+    bullet: {
+      type: BasicBulletType
+      shootEffect: shootTitan
+      smokeEffect: shootSmokeTitan
+      hitColor: ff0000
+      despawnSound: spark
+      sprite: large-orb
+      trailEffect: missileTrail
+      trailInterval: 3
+      trailParam: 4
+      speed: 3
+      damage: 37.5
+      lifetime: 60
+      width: 15
+      height: 15
+      backColor: ff0000
+      frontColor: ffffff
+      shrinkX: 0
+      shrinkY: 0
+      trailColor: ff0000
+      trailLength: 12
+      trailWidth: 2.2
+      despawnEffect: blastExplosion
+      hitEffect: blastExplosion
+      intervalBullet: {
+        type: LightningBulletType
+        damage: 8
+        collidesAir: false
+        ammoMultiplier: 1
+        lightningColor: ff0000
+        lightningLength: 3
+        lightningLengthRand: 6
+        buildingDamageMultiplier: 0.25
+        lightningType: {
+          type: BulletType
+          speed: 0.0001
+          lifetime: 40
+          hitEffect: hitLancer
+          despawnEffect: none
+          status: shocked
+          statusDuration: 10
+          hittable: false
+          lightColor: ffffff
+          buildingDamageMultiplier: 0.25
+        }
+      }
+      bulletInterval: 4
+      lightningColor: ff0000
+      lightningDamage: 8.5
+      lightning: 8
+      lightningLength: 2
+      lightningLengthRand: 8
+    }
+  }
+]
+research: avert
