@@ -63,9 +63,5 @@ weapons: [
     }
   }
 ]
-requirements: [
-  beryllium/150
-  graphite/120
-  silicon/100
 ]
 research: avert
