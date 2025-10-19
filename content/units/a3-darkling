@@ -1,0 +1,87 @@
+name: "A3 Darkling"
+type: ErekirUnitType
+aiController: FlyingFollowAI
+envDisabled: 0
+lowAltitude: false
+flying: true
+drag: 0.06
+speed: 1.1
+rotateSpeed: 3.2
+accel: 0.1
+health: 6000
+armor: 4
+hitSize: 36
+payloadCapacity: 27
+researchCostMultiplier: 0
+targetAir: false
+engineSize: 4.8
+engineOffset: 15.25
+range: 258
+abilities: [
+  {
+    type: SuppressionFieldAbility
+    reload: 480
+    orbRadius: 5.3
+    y: 1
+  }
+]
+weapons: [
+  {
+    name: a3-darkling-weapon
+    shootSound: missileSmall
+    x: 12.75
+    y: 1.25
+    rotate: true
+    rotateSpeed: 2
+    reload: 27.5
+    layerOffset: -0.001
+    recoil: 1
+    rotationLimit: 60
+    mirror: true
+    alternate: false
+    bullet: {
+      type: BasicBulletType
+      sprite: missile-large
+      speed: 4.3
+      damage: 70
+      shootEffect: shootBig
+      smokeEffect: shootBigSmoke2
+      shake: 1
+      lifetime: 29.76
+      rangeOverride: 361.2
+      followAimSpeed: 5
+      width: 12
+      height: 22
+      hitSize: 7
+      hitColor: ff0000
+      backColor: ff0000
+      trailColor: ff0000
+      trailWidth: 3
+      trailLength: 12
+      hitEffect: hitBulletColor
+      despawnEffect: hitBulletColor
+      keepVelocity: false
+      collidesGround: true
+      collidesAir: false
+      fragRandomSpread: 0
+      fragBullets: 1
+      fragVelocityMin: 1
+      fragOffsetMax: 1
+      fragBullet: {
+        type: BulletType
+        speed: 0
+        keepVelocity: false
+        collidesAir: false
+        spawnUnit: quell-missile
+      }
+    }
+  }
+]
+requirements: [
+  beryllium/800
+  graphite/600
+  silicon/700
+  tungsten/500
+  oxide/100
+]
+research: quell
