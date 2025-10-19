@@ -1,0 +1,72 @@
+name: "A1 Darkling"
+type: ErekirUnitType
+hovering: true
+canDrown: false
+shadowElevation: 0.1
+drag: 0.07
+speed: 1.8
+rotateSpeed: 5
+accel: 0.09
+health: 600
+armor: 1
+hitSize: 11
+engineOffset: 7
+engineSize: 2
+itemCapacity: 0
+useEngineElevation: false
+researchCostMultiplier: 0
+abilities: [
+  {
+    type: MoveEffectAbility
+    x: 0
+    y: -7
+    color: ff0000
+    effect: missileTrailShort
+    interval: 4
+    teamColor: true
+  }
+]
+weapons: [
+  {
+    name: A1-darkling-weapon
+    shootSound: blaster
+    y: -2
+    x: 5
+    top: true
+    mirror: true
+    reload: 20
+    baseRotation: -35
+    shootCone: 360
+    alternate: false
+    shoot: {
+      type: ShootSpread
+      shots: 2
+      spread: 11
+    }
+    bullet: {
+      type: BasicBulletType
+      speed: 5
+      damage: 16
+      homingPower: 0.19
+      homingDelay: 4
+      width: 7
+      height: 12
+      lifetime: 30
+      shootEffect: sparkShoot
+      smokeEffect: shootBigSmoke
+      hitColor: ff0000
+      backColor: ff0000
+      trailColor: ff0000
+      frontColor: ffffff
+      trailWidth: 1.5
+      trailLength: 5
+      hitEffect: hitBulletColor
+      despawnEffect: hitBulletColor
+    }
+  }
+]
+requirements: [
+  beryllium/60
+  graphite/40
+]
+research: elude
