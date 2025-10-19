@@ -39,7 +39,7 @@ weapons: [
     x: 4
     y: 1
     shootY: 4
-    reload: 63
+    reload: 30
     cooldownTime: 42
     heatColor: f9350f
     alternate: false
