@@ -63,11 +63,4 @@ weapons: [
     }
   }
 ]
-requirements: [
-  beryllium/500
-  graphite/400
-  silicon/450
-  tungsten/350
-  thorium/200
-]
 research: anthicus
