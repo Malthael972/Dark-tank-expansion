@@ -1,0 +1,26 @@
+name: "Dark Fabricator" 
+type: UnitFactory
+regionSuffix: "-dark"
+health: 615
+size: 3
+configurable: false
+consumes: {
+power: 1
+}
+plans: [
+  {
+    unit: m1-darkling
+    requirements: [
+      silicon/70
+      beryllium/50
+    ]
+    time: 1750
+  }
+]
+category: units
+requirements: [
+  silicon/200
+  beryllium/250
+  tungsten/10
+]
+research: tank-fabricator
