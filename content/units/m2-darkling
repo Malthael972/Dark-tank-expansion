@@ -1,0 +1,89 @@
+name: "D5 Darkling"
+type: ErekirUnitType
+flying: false
+speed: 0.6
+drag: 0.1
+hitSize: 14
+rotateSpeed: 3
+health: 1100
+armor: 5
+stepShake: 0
+legCount: 4
+legLength: 14
+lockLegBase: true
+legContinuousMove: true
+legExtension: -3
+legBaseOffset: 5
+legMaxLength: 1.1
+legMinLength: 0.2
+legLengthScl: 0.95
+legForwardScl: 0.7
+legMoveSpace: 1
+hovering: true
+shadowElevation: 0.2
+groundLayer: 60
+weapons: [
+  {
+    name: d5-darkling-weapon
+    shootSound: blaster
+    x: 3.5
+    y: 8.25
+    reload: 33
+    layerOffset: -0.002
+    alternate: false
+    mirror: true
+    heatColor: ff0000
+    cooldownTime: 25
+    smoothReloadSpeed: 0.15
+    recoil: 2
+    bullet: {
+      type: BasicBulletType
+      speed: 3.5
+      damage: 30
+      backColor: ff0000
+      trailColor: ff0000
+      hitColor: ff0000
+      frontColor: ffffff
+      width: 7.5
+      height: 10
+      lifetime: 40
+      trailWidth: 2
+      trailLength: 4
+      shake: 1
+      trailEffect: missileTrail
+      trailParam: 1.8
+      trailInterval: 6
+      splashDamageRadius: 30
+      splashDamage: 43
+      hitEffect: hitBulletColor
+      despawnEffect: hitBulletColor
+      shootEffect: shootBigColor
+      smokeEffect: shootSmokeSquare
+      ammoMultiplier: 2
+    }
+  }
+  {
+    name: d5-darkling-point-defense
+    x: 4
+    y: -5
+    reload: 9
+    targetInterval: 9
+    targetSwitchInterval: 12
+    recoil: 0.5
+    bullet: {
+      type: BulletType
+      shootSound: lasershoot
+      shootEffect: sparkShoot
+      hitEffect: pointHit
+      maxRange: 100
+      damage: 38
+    }
+  }
+]
+requirements: [
+  beryllium/250
+  graphite/200
+  silicon/180
+  tungsten/100
+]
+research: cleroi
