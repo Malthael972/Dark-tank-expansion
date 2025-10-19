@@ -1,24 +1,36 @@
-type: ConsumeGenerator
-name: turbine-liquid
-localizedName: Liquid Turbine
-description: Generates power by consuming liquid. Connect to a liquid source.
-planet: erekir
-size: 3
-health: 575
-solid: true
-hasLiquids: true
-hasPower: true
-alwaysUnlocked: true
-powerProduction: 7400
-consumeLiquid: 
-  liquid: water
-  amount: 5
-drawer:
-  type: DrawLiquidTile
-  liquid: water
-  color: "6ec6ff"
-requirements: [
-  beryllium: 60
-]
+type: ThermalGenerator
+name: Dark Turbine
+description: A mysterious power generator that condenses dark steam into pure energy.
+details: Functions identically to the standard Turbine Condenser but radiates ominous energy.
 category: power
-research: Liquid-Turbine
+group: liquids
+size: 3
+health: 760
+requirements: [
+  beryllium/60
+]
+research: turbine-condenser
+researchCost: [
+  beryllium/15
+]
+attribute: steam
+displayEfficiencyScale: 0.1111
+minEfficiency: 8.9999
+powerProduction: 0.3333
+displayEfficiency: false
+effectChance: 0.04
+generateEffect: turbinegenerate
+ambientSound: hum
+ambientSoundVolume: 0.06
+hasLiquids: true
+outputLiquid: water/0.00926
+liquidCapacity: 20
+fogRadius: 3
+drawer: {
+  type: DrawMulti
+  draws: [
+    { type: DrawRegion }
+    { type: DrawSpinRegion, suffix: "-rotator", rotateSpeed: 5.4 }
+  ]
+}
+sprite: dark-turbine
