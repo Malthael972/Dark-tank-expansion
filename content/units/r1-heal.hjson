@@ -4,11 +4,11 @@ controller: RepairAI
 defaultCommand: repair
 lowAltitude: false
 mineWalls: true
-mineFloor: false
+mineFloor: true
 mineHardnessScaling: false
 flying: true
 mineSpeed: 8
-mineTier: 3
+mineTier: 4
 drag: 0.08
 speed: 7
 rotateSpeed: 8
