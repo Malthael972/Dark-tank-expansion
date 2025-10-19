@@ -65,8 +65,4 @@ weapons: [
     }
   }
 ]
-requirements: [
-  beryllium/60
-  graphite/40
-]
 research: elude
