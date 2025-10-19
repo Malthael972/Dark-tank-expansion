@@ -57,8 +57,4 @@ weapons: [
     }
   }
 ]
-requirements: [
-  graphite/30
-  silicon/40
-]
 research: stell
