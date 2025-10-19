@@ -100,5 +100,79 @@ weapons: [
       spawnUnit: anthicus-missile
     }
   }
+  {
+    name: m3-darkling-weapon
+    shootSound: missileLarge
+    x: 7.25
+    y: -2.75
+    shootY: 1.5
+    showStatSprite: false
+    reload: 130
+    layerOffset: 0.01
+    heatColor: ff0000
+    cooldownTime: 60
+    smoothReloadSpeed: 0.15
+    shootWarmupSpeed: 0.05
+    minWarmup: 0.9
+    rotationLimit: 70
+    rotateSpeed: 2
+    inaccuracy: 20
+    shootStatus: slow
+    alwaysShootWhenMoving: true
+    rotate: true
+    mirror: true
+    alternate: false
+    shoot: {
+      shots: 2
+      shotDelay: 6
+    }
+    bullet: {
+      type: BulletType
+      shootEffect: shootBigColor
+      smokeEffect: shootBigSmoke2
+      shake: 2
+      speed: 0
+      keepVelocity: false
+      inaccuracy: 2
+      spawnUnit: anthicus-missile
+    }
+  }
+  {
+    name: m3-darkling-weapon
+    shootSound: missileLarge
+    x: -7.25
+    y: 2.75
+    shootY: 1.5
+    showStatSprite: false
+    reload: 130
+    layerOffset: 0.01
+    heatColor: ff0000
+    cooldownTime: 60
+    smoothReloadSpeed: 0.15
+    shootWarmupSpeed: 0.05
+    minWarmup: 0.9
+    rotationLimit: 70
+    rotateSpeed: 2
+    inaccuracy: 20
+    shootStatus: slow
+    alwaysShootWhenMoving: true
+    rotate: true
+    mirror: true
+    alternate: false
+    shoot: {
+      shots: 2
+      shotDelay: 6
+    }
+    bullet: {
+      type: BulletType
+      shootEffect: shootBigColor
+      smokeEffect: shootBigSmoke2
+      shake: 2
+      speed: 0
+      keepVelocity: false
+      inaccuracy: 2
+      spawnUnit: anthicus-missile
+    }
+  }
 ]
 research: anthicus
