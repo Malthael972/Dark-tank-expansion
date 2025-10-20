@@ -4,7 +4,6 @@ description: "A mysterious power generator that condenses dark steam into pure e
 details: "Functions identically to the standard Turbine Condenser but radiates ominous energy."
 category: power
 group: liquids
-regionSuffix: "-dark"
 size: 3
 health: 760
 requirements: [
@@ -40,3 +39,4 @@ drawer: {
     }
   ]
 }
+sprite: "dark-turbine"
