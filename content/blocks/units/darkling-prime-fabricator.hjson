@@ -9,6 +9,8 @@ upgrades: [
   [m2-darkling, m3-darkling]
   [a2-darkling, a3-darkling]
 ]
+outputsPayload: true
+outputFacing: true
 consumes: {
 power: 3
 liquid:{
