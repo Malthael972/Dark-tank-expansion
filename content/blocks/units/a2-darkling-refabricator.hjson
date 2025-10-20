@@ -7,6 +7,8 @@ constructTime: 1750
 upgrades: [
   [a1-darkling, a2-darkling]
 ]
+outputsPayload: true
+outputFacing: true
 consumes: {
 power: 3
 liquid:{
