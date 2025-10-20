@@ -23,7 +23,7 @@ items:{
 }
 }
 category: units
-research: Tank-Refabricator
+research: Mech-Refabricator
 requirements: [
   beryllium/250
   silicon/150
