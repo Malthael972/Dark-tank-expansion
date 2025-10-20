@@ -20,7 +20,7 @@ fogRadius: 4
 engineSize: 3.6
 engineOffset: 5
 engineColor: 84f491
-envEnabled: 63
+envEnabled: -1
 envDisabled: 0
 outlineColor: "2d2f39"
 engines: [
