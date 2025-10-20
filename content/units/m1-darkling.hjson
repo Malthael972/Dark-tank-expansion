@@ -1,5 +1,5 @@
 name: "M1 Darkling"
-type: mech
+type: legs
 template: ErekirUnitType
 flying: false
 speed: 0.72
