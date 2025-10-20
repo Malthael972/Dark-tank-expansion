@@ -8,7 +8,7 @@ mineFloor: true
 mineHardnessScaling: false
 flying: true
 mineSpeed: 10
-mineTier: 4
+mineTier: 5
 drag: 0.08
 speed: 7
 rotateSpeed: 9
