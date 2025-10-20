@@ -16,6 +16,8 @@ plans: [
     time: 2560
   }
 ]
+outputsPayload: true
+outputFacing: true
 category: units
 requirements: [
   graphite/200
