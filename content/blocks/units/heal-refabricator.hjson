@@ -6,6 +6,8 @@ constructTime: 1000
 upgrades: [
   [r1-heal, r2-regeneration]
 ]
+outputsPayload: true
+outputFacing: true
 consumes: {
 power: 3.8
 liquid:{
