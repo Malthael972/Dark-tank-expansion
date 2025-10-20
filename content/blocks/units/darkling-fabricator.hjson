@@ -17,6 +17,8 @@ plans: [
     time: 1750
   }
 ]
+outputsPayload: true
+outputFacing: true
 category: units
 requirements: [
   silicon/150
