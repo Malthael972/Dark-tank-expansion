@@ -9,7 +9,7 @@ range: 20
 fogRadius: 1
 consumesPower: true
 outputsPower: true
-consumePowerBuffered: 1000
+consumePowerBuffered: 2000
 buildCostMultiplier: 2.5
 requirements: [
   beryllium/8
