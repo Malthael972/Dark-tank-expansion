@@ -28,8 +28,6 @@ liquidCapacity: 60
 fogRadius: 3
 drawer: {
   type: DrawMulti
-  drawer: {
-  type: DrawMulti
   drawers: [
     {
       type: DrawDefault
