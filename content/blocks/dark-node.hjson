@@ -13,7 +13,6 @@ buildCostMultiplier: 2.5
 requirements: [
   beryllium/8
 ]
-research: Beam-Node
 researchCost: [
   beryllium/5
 ]
