@@ -26,17 +26,20 @@ hasLiquids: true
 outputLiquid: water/0.0555556
 liquidCapacity: 60
 fogRadius: 3
-drawer: [
-  {
-    type: DrawDefault
-  }
-  {
-    type: DrawRotator
-    suffix: "-rotator"
-    rotateSpeed: 5.4
-  }
-  {
-    type: DrawRegion
-    suffix: "-top"
-  }
-]
+drawer: {
+  type: DrawMulti
+  draws: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawRotator
+      suffix: "-rotator"
+      rotateSpeed: 5.4
+    }
+    {
+      type: DrawRegion
+      suffix: "-top"
+    }
+  ]
+}
