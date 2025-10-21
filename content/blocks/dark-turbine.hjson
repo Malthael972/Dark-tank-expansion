@@ -28,18 +28,11 @@ liquidCapacity: 60
 fogRadius: 3
 drawer: {
   type: DrawMulti
+  drawer: {
+  type: DrawMulti
   drawers: [
-    {
-      type: DrawDefault
-    }
-    {
-      type: DrawSpinRegion
-      suffix: "-rotator"
-      spinSpeed: 5.4
-    }
-    {
-      type: DrawRegion
-      suffix: "-top"
-    }
+    {type: DrawDefault}
+    {type: DrawRotator, suffix: "-rotator", rotateSpeed: 5.4}
+    {type: DrawRegion, suffix: "-top"}
   ]
 }
