@@ -1,0 +1,20 @@
+type: BeamNode
+name: Dark Node
+description: A mysterious power node that distributes energy through dark beams.
+category: power
+research: beam-node
+size: 1
+health: 150
+range: 20
+fogRadius: 1
+consumesPower: true
+outputsPower: true
+consumePowerBuffered: 1000
+buildCostMultiplier: 2.5
+requirements: [
+  beryllium/8
+]
+research: Beam-Node
+researchCost: [
+  beryllium/5
+]
