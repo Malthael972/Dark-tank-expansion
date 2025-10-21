@@ -37,6 +37,7 @@ drawer: {
       type: DrawRotator
       suffix: -rotator
       rotateSpeed: 5.4
+      rotatorLayer: 41
       drawBlur: true
     }
   ]
