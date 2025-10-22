@@ -1,18 +1,20 @@
 type: BeamNode
-name: Dark Node
-description: A mysterious power node that distributes energy through dark beams.
+name: dark-node
+localizedName: Dark Node
+description: Transfers power through dark energy beams.
+requirements: [
+  tungsten/60
+  silicon/45
+  oxide/25
+]
 category: power
 research: beam-node
-size: 1
-health: 150
-range: 20
-fogRadius: 1
-consumesPower: true
+health: 280
+range: 9
+maxNodes: 3
+laserColor1: 5a0000
+laserColor2: 2a0000
 outputsPower: true
-buildCostMultiplier: 2.5
-requirements: [
-  beryllium/8
-]
-researchCost: [
-  beryllium/5
-]
+consumes: {
+  power: 0
+}
