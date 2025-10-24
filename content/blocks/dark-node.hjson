@@ -18,4 +18,4 @@ outputsPower: true
 consumes: {
   power: 0
 }
-powerCapacity: 2000
+consPowers: 2000
