@@ -23,7 +23,12 @@ items:{
 }
 }
 category: units
-research: Mech-Refabricator
+research: [
+parent: Mech-refabricator
+]
+researchCost: [
+beryllium/15
+]
 requirements: [
   beryllium/250
   silicon/150
