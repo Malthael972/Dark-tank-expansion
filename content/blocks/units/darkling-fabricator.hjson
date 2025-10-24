@@ -24,9 +24,7 @@ requirements: [
   silicon/150
   beryllium/200
 ]
-research: [
-parent: Tank-Fabricator
-]
+research: tank-fabricator
 researchCost: [
 beryllium/15
 ]
