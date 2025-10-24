@@ -8,7 +8,7 @@ requirements: [
   oxide/25
 ]
 category: power
-research: beam-node
+research: turbine-condenser
 researchCost: [
 beryllium/15
 ]
