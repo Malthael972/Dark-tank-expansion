@@ -102,7 +102,9 @@ requirements: [
   oxide/100
   carbide/40
 ]
-research: Afflict
-researchCost:[
+research: [
+parent: Afflict
+]
+researchCost: [
 beryllium/15
 ]
