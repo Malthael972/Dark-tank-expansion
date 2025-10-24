@@ -15,6 +15,4 @@ range: 15
 laserColor1: 5a0000
 laserColor2: 2a0000
 outputsPower: true
-consumes: {
-  powerBuffered: 2000
-}
+consumePowerBuffered: 2000
