@@ -25,7 +25,12 @@ items:{
 }
 }
 category: units
-research: prime-refabricator
+research: [
+parent: prime-refabricator
+]
+researchCost: [
+beryllium/15
+]
 requirements: [
   thorium/250
   silicon/400
