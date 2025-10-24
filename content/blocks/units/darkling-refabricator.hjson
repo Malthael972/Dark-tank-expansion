@@ -24,7 +24,6 @@ items:{
 }
 category: units
 research: tank-refabricator
-]
 researchCost: [
 beryllium/15
 ]
