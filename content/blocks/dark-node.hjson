@@ -8,15 +8,12 @@ requirements: [
   oxide/25
 ]
 category: power
-research: [
-parent: beam-node
-]
+research: beam-node
 researchCost: [
 beryllium/15
 ]
 health: 280
 range: 15
-maxNodes: 3
 laserColor1: 5a0000
 laserColor2: 2a0000
 outputsPower: true
