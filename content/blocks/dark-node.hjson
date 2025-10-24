@@ -8,7 +8,12 @@ requirements: [
   oxide/25
 ]
 category: power
-research: beam-node
+research: [
+parent: beam-node
+]
+researchCost: [
+beryllium/15
+]
 health: 280
 range: 15
 maxNodes: 3
