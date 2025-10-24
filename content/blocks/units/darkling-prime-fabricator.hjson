@@ -25,9 +25,7 @@ items:{
 }
 }
 category: units
-research: [
-parent: prime-refabricator
-]
+research: prime-refabricator
 researchCost: [
 beryllium/15
 ]
