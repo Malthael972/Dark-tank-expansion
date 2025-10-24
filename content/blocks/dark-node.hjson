@@ -3,9 +3,7 @@ name: dark-node
 localizedName: Dark Node
 description: Transfers power through dark energy beams.
 requirements: [
-  tungsten/60
-  silicon/45
-  oxide/25
+ beryllium/8
 ]
 category: power
 research: dark-turbine
