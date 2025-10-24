@@ -23,7 +23,12 @@ items:{
 }
 }
 category: units
-research: Ship-Refabricator
+research: [
+parent: Ship-Refabricator
+]
+researchCost: [
+beryllium/15
+]
 requirements: [
   beryllium/250
   silicon/150
