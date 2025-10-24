@@ -23,8 +23,7 @@ items:{
 }
 }
 category: units
-research: [
-parent: Tank-Refabricator
+research: tank-refabricator
 ]
 researchCost: [
 beryllium/15
