@@ -23,9 +23,7 @@ items:{
 }
 }
 category: units
-research: [
-parent: Mech-refabricator
-]
+research: mech-refabricator
 researchCost: [
 beryllium/15
 ]
