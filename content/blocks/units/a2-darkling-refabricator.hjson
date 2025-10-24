@@ -23,9 +23,7 @@ items:{
 }
 }
 category: units
-research: [
-parent: Ship-Refabricator
-]
+research: ship-refabricator
 researchCost: [
 beryllium/15
 ]
