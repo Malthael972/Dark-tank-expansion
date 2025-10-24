@@ -11,7 +11,6 @@ researchCost: [
 beryllium/15
 ]
 health: 280
-powerCapacity: 2000
 range: 15
 laserColor1: 5a0000
 laserColor2: 2a0000
@@ -19,3 +18,4 @@ outputsPower: true
 consumes: {
   power: 0
 }
+powerCapacity: 2000
