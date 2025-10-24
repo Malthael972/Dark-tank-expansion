@@ -17,5 +17,5 @@ laserColor2: 2a0000
 outputsPower: true
 consumes: {
   power: 0
- powerCapacity: 2000
+ capacity: 2000
 }
