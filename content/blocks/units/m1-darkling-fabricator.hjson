@@ -25,7 +25,7 @@ requirements: [
   beryllium/250
   tungsten/10
 ]
-research: Mech-Fabricator
+research: mech-fabricator
 researchCost: [
 beryllium/15
 ]
