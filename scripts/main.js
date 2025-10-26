@@ -8,4 +8,4 @@ Blocks.largePlasmaBore.drillTime=30
 Blocks.eruptionDrill.drillTime=30
 Blocks.eruptionDrill.drillTime=30
 Blocks.cliffCrusher.drillTime=30
-Blocks.largeCliffCrusher.drilltime=30
+Blocks.largeCliffCrusher.drillTime=30
