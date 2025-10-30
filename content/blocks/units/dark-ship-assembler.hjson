@@ -1,6 +1,6 @@
 // Ship Assembler
-  type: UnitAssembler
-  name: "A4-5-dark-assembler
+  type: UnitFactory
+  name: "A4-5-dark-assembler"
   category: units
   requirements: [
     carbide/100
