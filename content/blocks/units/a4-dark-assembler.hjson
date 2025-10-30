@@ -1,0 +1,53 @@
+// Ship Assembler
+{
+  type: UnitAssembler
+  name: ship-assembler
+  category: units
+  requirements: [
+    carbide/100
+    oxide/200
+    tungsten/550
+    silicon/900
+    thorium/400
+  ]
+  regionSuffix: -dark
+  size: 5
+  plans: [
+    {
+      unit: quell
+      time: 3600
+      requirements: [
+        {
+          item: elude
+          amount: 4
+        }
+        {
+          block: beryllium-wall-large
+          amount: 12
+        }
+      ]
+    }
+    {
+      unit: disrupt
+      time: 10800
+      requirements: [
+        {
+          item: avert
+          amount: 6
+        }
+        {
+          block: carbide-wall-large
+          amount: 20
+        }
+      ]
+    }
+  ]
+  areaSize: 13
+  consumes: {
+    power: 2.5
+    liquid: {
+      liquid: cyanogen
+      amount: 0.2
+    }
+  }
+}
