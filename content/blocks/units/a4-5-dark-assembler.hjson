@@ -1,5 +1,4 @@
 // Ship Assembler
-{
   type: UnitAssembler
   name: "A4-5-dark-assembler
   category: units
@@ -49,5 +48,4 @@
       liquid: cyanogen
       amount: 0.2
     }
-  }
-}
+  }}
