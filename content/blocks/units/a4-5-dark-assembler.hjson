@@ -1,7 +1,7 @@
 // Ship Assembler
 {
   type: UnitAssembler
-  name: ship-assembler
+  name: "A4-5-dark-assembler
   category: units
   requirements: [
     carbide/100
@@ -14,11 +14,11 @@
   size: 5
   plans: [
     {
-      unit: quell
+      unit: a4-darkling
       time: 3600
       requirements: [
         {
-          item: elude
+          item: a1-darkling
           amount: 4
         }
         {
@@ -28,11 +28,11 @@
       ]
     }
     {
-      unit: disrupt
+      unit: a4-darkling
       time: 10800
       requirements: [
         {
-          item: avert
+          item: a2-darkling
           amount: 6
         }
         {
