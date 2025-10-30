@@ -1,5 +1,5 @@
 // Ship Assembler
-  type: UnitFactory
+  type: UnitAssembler
   name: "A4-5-dark-assembler"
   category: units
   requirements: [
@@ -27,7 +27,7 @@
       ]
     }
     {
-      unit: a4-darkling
+      unit: a5-darkling
       time: 10800
       requirements: [
         {
