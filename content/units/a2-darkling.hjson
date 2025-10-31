@@ -1,5 +1,5 @@
 name: "A2 Darkling"
-constructor = UnitEntity::create
+constructor = UnitEntity
 type: flying
 template: ErekirUnitType
 lowAltitude: false
