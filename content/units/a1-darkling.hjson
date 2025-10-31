@@ -1,5 +1,5 @@
 name: "A1 Darkling"
-constructor = UnitEntity::create
+constructor: ElevationMoveUnit
 type: flying
 template: ErekirUnitType
 hovering: true
