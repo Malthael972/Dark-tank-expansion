@@ -1,7 +1,9 @@
 type: ErekirUnitType
 name: Disrupt
-description: Launches homing suppression missiles that detonate in a large radius. Equipped with a powerful suppression field.
+description: Launches homing suppressionmissiles that detonate in a large radius. Equipped with a powerful suppression field.
+type: flying
 constructor: UnitEntity::create
+template: ErekirUnitType
 aiController: FlyingFollowAI
 envDisabled: 0
 lowAltitude: false
