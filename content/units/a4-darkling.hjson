@@ -1,6 +1,6 @@
 name: "A4 Darkling"
-constructor: UnitEntity::create
 type: flying
+constructor: UnitEntity::create
 template: ErekirUnitType
 envDisabled: 0
 lowAltitude: false
