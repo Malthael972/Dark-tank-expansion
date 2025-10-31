@@ -1,4 +1,5 @@
 name: "D2 Darkling"
+constructor: TankUnit
 type: tank
 template: ErekirUnitType
 flying: false
