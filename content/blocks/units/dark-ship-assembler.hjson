@@ -30,6 +30,9 @@ plans: [
 ]
 squareSprite: false
 consumes: {
-  power: 2
+power: 2
+liquid:{
+    liquid: cyanogen
+    amount: 0.16
 }
 areaSize: 13
