@@ -1,5 +1,6 @@
 name: "M2-Darkling"
 type: legs
+template: ErekirUnitType
 flying: false
 speed: 0.6
 drag: 0.1
