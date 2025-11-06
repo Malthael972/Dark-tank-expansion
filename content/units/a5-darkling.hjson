@@ -1,8 +1,10 @@
-name: "a5-darkling"
-description: Launches homing suppressionmissiles that detonate in a large radius. Equipped with a powerful suppression field.
 type: flying
-template: ErekirUnitType
+name: a5-darkling
+description: Large support unit equipped with suppression field generators that disable enemy turrets. Launches missiles at ground targets.
+
+aiController: FlyingFollowAI
 envDisabled: 0
+
 lowAltitude: false
 flying: true
 drag: 0.07
@@ -14,16 +16,37 @@ armor: 9
 hitSize: 46
 payloadCapacity: 576
 targetAir: false
+
 engineSize: 6
 engineOffset: 25.25
+
 engines: [
   {
-    x: 0
-    y: -25.25
-    radius: 6
-    rotation: 270
+    x: 23.75
+    y: -14
+    radius: 5
+    rotation: 330
+  }
+  {
+    x: 22.25
+    y: -23.75
+    radius: 4
+    rotation: 315
+  }
+  {
+    x: -23.75
+    y: -14
+    radius: 5
+    rotation: -330
+  }
+  {
+    x: -22.25
+    y: -23.75
+    radius: 4
+    rotation: -315
   }
 ]
+
 abilities: [
   {
     type: SuppressionFieldAbility
@@ -33,9 +56,6 @@ abilities: [
     particleSize: 3
     y: 10
     particles: 10
-    color: bf92f9
-    particleColor: bf92f9
-    effectColor: bf92f9
   }
   {
     type: SuppressionFieldAbility
@@ -45,9 +65,6 @@ abilities: [
     x: 10.75
     particles: 10
     active: false
-    color: bf92f9
-    particleColor: bf92f9
-    effectColor: bf92f9
   }
   {
     type: SuppressionFieldAbility
@@ -57,11 +74,9 @@ abilities: [
     x: -10.75
     particles: 10
     active: false
-    color: bf92f9
-    particleColor: bf92f9
-    effectColor: bf92f9
   }
 ]
+
 weapons: [
   {
     name: disrupt-weapon
@@ -80,11 +95,11 @@ weapons: [
     shootY: 2
     shootCone: 40
     inaccuracy: 28
-     shoot: {
+    shoot: {
       shots: 3
       shotDelay: 5
     }
-     parts: [
+    parts: [
       {
         type: RegionPart
         suffix: -blade
@@ -105,8 +120,7 @@ weapons: [
         mirror: true
       }
     ]
-      bullet: {
-      type: BulletType
+    bullet: {
       shootEffect: sparkShoot
       smokeEffect: shootSmokeTitan
       hitColor: bf92f9
