@@ -3,7 +3,6 @@ name: Disrupt
 description: Launches homing suppressionmissiles that detonate in a large radius. Equipped with a powerful suppression field.
 type: flying
 template: ErekirUnitType
-aiController: FlyingFollowAI
 envDisabled: 0
 lowAltitude: false
 flying: true
