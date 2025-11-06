@@ -29,7 +29,7 @@ setEnginesMirror: [
 ]
 weapons: [
   {
-    name: A2-darkling-weapon
+    name: a2-darkling-weapon
     shootSound: blaster
     reload: 17.5
     x: 4
