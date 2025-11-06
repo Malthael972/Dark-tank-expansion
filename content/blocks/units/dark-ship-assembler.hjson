@@ -13,7 +13,7 @@ plans: [
     type: AssemblerUnitPlan
     unit: a4-darkling
     requirements: [
-      dark-tank-expansion-a1-darkling/4
+      dark-tank-expansion-a2-darkling/4
       beryllium-wall-large/12
     ]
     time: 2500
