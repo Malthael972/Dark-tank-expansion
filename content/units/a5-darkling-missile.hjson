@@ -1,0 +1,81 @@
+type: missile
+template: MissileUnitType
+name: Disrupt Missile
+description: Homing missile launched by the Disrupt unit.
+targetAir: false
+speed: 4.6
+maxRange: 5
+outlineColor: 3b3b57
+health: 70
+homingDelay: 10
+lowAltitude: true
+engineSize: 3
+engineColor: 665c9f
+trailColor: 665c9f
+engineLayer: 100
+deathExplosionEffect: none
+loopSoundVolume: 0.1
+parts: [
+  {
+    type: ShapePart
+    layer: 100
+    circle: true
+    y: -0.25
+    radius: 1.5
+    color: bf92f9
+    colorTo: ffffff
+    progress: {
+      type: life
+      curve: pow5In
+    }
+  }
+  {
+    type: RegionPart
+    suffix: -fin
+    mirror: true
+    progress: {
+      type: life
+      op: mul
+      amount: 3
+      curve: pow5In
+    }
+    moveRot: 32
+    rotation: -6
+    moveY: 1.5
+    x: 0.75
+    y: -1.5
+  }
+]
+weapons: [
+  {
+    shootCone: 360
+    mirror: false
+    reload: 1
+    shootOnDeath: true
+    bullet: {
+      type: ExplosionBulletType
+      damage: 140
+      splashDamage: 140
+      splashDamageRadius: 25
+      collidesAir: false
+      suppressionRange: 140
+      shootEffect: {
+        type: ExplosionEffect
+        lifetime: 50
+        waveStroke: 5
+        waveLife: 8
+        waveColor: ffffff
+        sparkColor: bf92f9
+        smokeColor: bf92f9
+        waveRad: 40
+        smokeSize: 4
+        smokes: 7
+        smokeSizeBase: 0
+        sparks: 10
+        sparkRad: 40
+        sparkLen: 6
+        sparkStroke: 2
+      }
+    }
+  }
+]
