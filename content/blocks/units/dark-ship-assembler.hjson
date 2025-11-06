@@ -1,10 +1,10 @@
 researchCostMultiplier: 0.5
 type: UnitAssembler
 name: dark-ship-assembler
-description: Creates tank units using payloads. Requires power.
 size: 5
 category: units
 research: ship-assembler
+planet: erekir
 requirements: [
   beryllium/150
 ]
