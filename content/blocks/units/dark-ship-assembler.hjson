@@ -1,41 +1,26 @@
+researchCostMultiplier: 0.5
 type: UnitAssembler
-name: "Dark Ship Assembler"
+name: Tank Assembly Bay
+description: Creates tank units using payloads. Requires power.
 size: 5
-health: 2500
-armor: 15
-regionSuffix: -dark
-areaSize: 13
 category: units
-buildTime: 4000
+research: ship-assembler
 requirements: [
-  carbide/150
-  oxide/250
-  tungsten/600
-  silicon/450
-  thorium/200
+  beryllium 150
 ]
-consumes: {
-  power: 3.0
-  liquid: {
-    liquid: cyanogen
-    amount: 0.25
-    optional: false
-  }
-}
 plans: [
    {
     type: AssemblerUnitPlan
     unit: a4-darkling
     requirements: [
-      dark-elude/4
-      beryllium-wall-large/4
+      a1-darkling/4
+      beryllium-wall-large/12
     ]
-    time: 900
+    time: 2500
   }
 ]
-research: {
-  parent: ship-assembler
-  requirements: [
-    beryllium/15
-  ]
+squareSprite: false
+consumes: {
+  power: 2
 }
+areaSize: 13
