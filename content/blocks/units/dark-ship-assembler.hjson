@@ -1,5 +1,5 @@
 type: UnitAssembler
-name: DarkShipAssembler
+name: "Dark-Ship-Assembler"
 size: 5
 health: 2500
 armor: 15
