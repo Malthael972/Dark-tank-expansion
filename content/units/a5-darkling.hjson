@@ -1,6 +1,5 @@
 type: flying
 name: a5-darkling
-description: Large support unit equipped with suppression field generators that disable enemy turrets. Launches missiles at ground targets.
 envDisabled: 0
 lowAltitude: false
 flying: true
