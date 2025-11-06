@@ -1,4 +1,4 @@
-qname: "a1-darkling"
+1name: "a1-darkling"
 type: flying
 template: ErekirUnitType
 allowedInPayloads: true
