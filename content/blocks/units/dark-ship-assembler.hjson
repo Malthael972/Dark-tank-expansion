@@ -12,7 +12,7 @@ consumes: {
    optional:false
    }
 }
-plans: [ 
+plans: { 
  unit: a4-darkling
 time:2500
 requirements: [
@@ -25,7 +25,7 @@ requirements: [
  amount: 12
  }
 ]
-]
+}
 areaSize: 13
 requirements: [
 carbide/150
