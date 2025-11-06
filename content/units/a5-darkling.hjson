@@ -1,10 +1,7 @@
 type: flying
 name: a5-darkling
 description: Large support unit equipped with suppression field generators that disable enemy turrets. Launches missiles at ground targets.
-
-aiController: FlyingFollowAI
 envDisabled: 0
-
 lowAltitude: false
 flying: true
 drag: 0.07
@@ -16,10 +13,8 @@ armor: 9
 hitSize: 46
 payloadCapacity: 576
 targetAir: false
-
 engineSize: 6
 engineOffset: 25.25
-
 engines: [
   {
     x: 23.75
@@ -79,7 +74,7 @@ abilities: [
 
 weapons: [
   {
-    name: disrupt-weapon
+    name: a5-darkling-weapon
     shootSound: missileLarge
     x: 19.5
     y: -2.5
@@ -128,7 +123,6 @@ weapons: [
       speed: 0
       keepVelocity: false
       collidesAir: false
-      spawnUnit: disrupt-missile
+      spawnUnit: a5-darkling-missile
     }
   }
-]
