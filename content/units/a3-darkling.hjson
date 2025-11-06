@@ -1,6 +1,5 @@
 name: "A3 Darkling"
 type: flying
-constructor: UnitEntity::create
 template: ErekirUnitType
 flying: true
 drag: 0.08
