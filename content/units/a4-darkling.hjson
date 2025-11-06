@@ -1,6 +1,5 @@
 name: "A4 Darkling"
 type: flying
-template: ErekirUnitType
 envDisabled: 0
 lowAltitude: false
 flying: true
