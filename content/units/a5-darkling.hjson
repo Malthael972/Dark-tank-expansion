@@ -1,5 +1,6 @@
 type: flying
 name: a5-darkling
+planet:erekir
 envDisabled: 0
 lowAltitude: false
 flying: true
