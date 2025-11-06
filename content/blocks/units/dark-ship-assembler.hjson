@@ -27,8 +27,14 @@ plans: [
     unit: a4-darkling
     time: 2500
     requirements: [
-      a1-darkling/4
-      beryllium-wall-large/12
+      {
+      unit: a1-darkling
+      amount: 4
+      }
+      {
+      item: beryllium-wall-large
+      amount: 12
+      }
     ]
   }
 ]
