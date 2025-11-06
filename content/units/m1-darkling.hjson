@@ -1,6 +1,5 @@
 name: "M1 Darkling"
 type: legs
-template: ErekirUnitType
 flying: false
 speed: 0.72
 drag: 0.11
