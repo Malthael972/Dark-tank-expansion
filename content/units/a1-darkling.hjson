@@ -31,7 +31,7 @@ abilities: [
 ]
 weapons: [
   {
-    name: A1-darkling-weapon
+    name: a1-darkling-weapon
     shootSound: blaster
     y: -2
     x: 5
@@ -68,7 +68,7 @@ weapons: [
     }
   }
   {
-    name: A1-darkling-weapon
+    name: a1-darkling-weapon
     shootSound: blaster
     y: 2
     x: -5
