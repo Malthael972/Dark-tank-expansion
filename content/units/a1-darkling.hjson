@@ -1,7 +1,7 @@
-name: "a1-darkling"
+qname: "a1-darkling"
 type: flying
 template: ErekirUnitType
-allowedInPayLoads: true
+allowedInPayloads: true
 payloadCapacity: 0
 hovering: true
 canDrown: false
