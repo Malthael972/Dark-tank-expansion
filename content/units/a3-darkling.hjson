@@ -14,7 +14,6 @@ engineOffset: 13.5
 fogRadius: 25
 itemCapacity: 0
 lowAltitude: true
-
 parts: [
   {
     type: RegionPart
@@ -40,7 +39,6 @@ parts: [
     ]
   }
 ]
-
 engines: [
   {
     x: 6.25
@@ -55,7 +53,6 @@ engines: [
     rotation: 225
   }
 ]
-
 weapons: [
   {
     shootSound: shockBlast
