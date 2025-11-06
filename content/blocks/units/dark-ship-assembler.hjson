@@ -31,8 +31,8 @@ plans: [
     time: 2500
     requirements: [
      items:[]
-     payloads{
-a1-darkling/4
+     payloads: {
+      a1-darkling/4
       beryllium-wall-large/12
      }
     ]
