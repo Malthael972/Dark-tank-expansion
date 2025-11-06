@@ -1,6 +1,5 @@
 name: "D3-Darkling"
 type: tank
-template: ErekirUnitType
 flying: false
 health: 5250
 armor: 11
