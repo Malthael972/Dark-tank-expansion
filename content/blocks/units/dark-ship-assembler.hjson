@@ -23,19 +23,14 @@ consumes: {
   }
 }
 plans: [
-  {
+   {
+    type: AssemblerUnitPlan
     unit: a4-darkling
-    time: 2500
     requirements: [
-      {
-      unit: a1-darkling
-      amount: 4
-      }
-      {
-      item: beryllium-wall-large
-      amount: 12
-      }
+      a1-darkling/4
+      beryllium-wall-large/4
     ]
+    time: 900
   }
 ]
 research: {
