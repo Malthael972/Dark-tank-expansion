@@ -6,7 +6,7 @@ size: 5
 category: units
 research: ship-assembler
 requirements: [
-  beryllium 150
+  beryllium/150
 ]
 plans: [
    {
