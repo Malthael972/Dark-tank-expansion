@@ -30,8 +30,11 @@ plans: [
     unit: a4-darkling
     time: 2500
     requirements: [
-      a1-darkling/4
+     items:[]
+     payloads{
+a1-darkling/4
       beryllium-wall-large/12
+     }
     ]
   }
 ]
