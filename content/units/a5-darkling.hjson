@@ -1,4 +1,5 @@
 type: flying
+template: ErekirUnitType
 name: a5-darkling
 envDisabled: 0
 lowAltitude: false
