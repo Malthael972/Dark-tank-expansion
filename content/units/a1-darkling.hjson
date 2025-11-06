@@ -1,6 +1,5 @@
 name: "A1 Darkling"
 type: flying
-constructor: ElevationMoveUnit:: create
 template: ErekirUnitType
 hovering: true
 canDrown: false
