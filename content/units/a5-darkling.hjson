@@ -11,6 +11,7 @@ health: 12000
 armor: 9
 hitSize: 46
 payloadCapacity: 576
+researchCostMultiplier: 0
 targetAir: false
 engineSize: 6
 engineOffset: 25.25
@@ -127,4 +128,3 @@ weapons: [
   }
 ]
 reseaech: disrupt
-researchCostMultiplier: [0]
