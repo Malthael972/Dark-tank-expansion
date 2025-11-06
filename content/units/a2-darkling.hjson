@@ -1,6 +1,5 @@
-name: "A2 Darkling"
+name: "a2-darkling"
 type: flying
-template: ErekirUnitType
 lowAltitude: false
 flying: true
 drag: 0.08
