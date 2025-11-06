@@ -1,44 +1,50 @@
 type: UnitAssembler
-name: "Dark-Ship-Assembler"
+name: "Dark Ship Assembler"
 size: 5
 health: 2500
 armor: 15
 regionSuffix: -dark
+areaSize: 13
+category: units
+buildTime: 4000
+
+requirements: [
+  carbide/150
+  oxide/250
+  tungsten/600
+  silicon/450
+  thorium/200
+]
+
 consumes: {
   power: 3.0
-   liquid: {
-   liquid: cyanogen
-   amount: 0.25
-   optional:false
-   }
+  liquid: {
+    liquid: cyanogen
+    amount: 0.25
+    optional: false
+  }
 }
-plans: { 
- unit: a4-darkling
-time:2500
-requirements: [
- { 
- unit: a1-darkling
- amount: 3
- }
- {
- block: beryllium-wall-large 
- amount: 12
- }
+
+plans: [
+  {
+    unit: a4-darkling
+    time: 2500
+    requirements: [
+      {
+        unit: a1-darkling
+        amount: 4
+      }
+      {
+        block: beryllium-wall-large
+        amount: 12
+      }
+    ]
+  }
 ]
+
+research: {
+  parent: ship-assembler
+  requirements: [
+    beryllium/15
+  ]
 }
-areaSize: 13
-requirements: [
-carbide/150
-oxide/250
-tungsten/600
-silicon/450
-thorium/200
-]
-category: units
-research: [
- parent: ship-assembler
-]
-researchCost: [
-beryllium/15
-]
-buildTime: 4000
