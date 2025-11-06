@@ -1,6 +1,5 @@
 name: "dark-elude"
 type: flying
-template: ErekirUnitType
 allowedInPayloads: true
 payloadCapacity: 0
 hovering: true
