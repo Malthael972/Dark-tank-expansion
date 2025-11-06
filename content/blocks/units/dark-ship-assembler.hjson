@@ -27,7 +27,7 @@ plans: [
     type: AssemblerUnitPlan
     unit: a4-darkling
     requirements: [
-      dark-elude/4
+      dark-tank-exspansion-a1-darkling/4
       beryllium-wall-large/4
     ]
     time: 900
