@@ -1,5 +1,4 @@
 name: "M1 Darkling"
-constructor: LegsUnit::create
 type: legs
 template: ErekirUnitType
 flying: false
