@@ -1,5 +1,4 @@
-type: ErekirUnitType
-name: Disrupt
+name: "a5-darkling"
 description: Launches homing suppressionmissiles that detonate in a large radius. Equipped with a powerful suppression field.
 type: flying
 template: ErekirUnitType
