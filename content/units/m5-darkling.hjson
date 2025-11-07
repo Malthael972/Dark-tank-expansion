@@ -1,0 +1,368 @@
+type: legs
+template: ErekirUnitType
+name: m5-darkling
+description: Heavy octopod artillery mech with powerful cannons that fire explosive shells which fragment into homing projectiles. Slows itself when firing.
+
+drag: 0.1
+speed: 1.1
+hitSize: 44
+health: 18000
+armor: 9
+rotateSpeed: 1.6
+
+lockLegBase: true
+legContinuousMove: true
+legStraightness: 0.6
+baseLegStraightness: 0.5
+
+legCount: 8
+legLength: 30
+legForwardScl: 2.1
+legMoveSpace: 1.05
+rippleScale: 1.2
+stepShake: 0.5
+legGroupSize: 2
+legExtension: -6
+legBaseOffset: 19
+legStraightLength: 0.9
+legMaxLength: 1.2
+
+ammoType: power
+ammoCapacity: 2000
+
+legSplashDamage: 32
+legSplashRange: 32
+drownTimeMultiplier: 0.5
+
+hovering: true
+shadowElevation: 0.4
+groundLayer: 75
+
+targetAir: false
+alwaysShootWhenMoving: true
+
+weapons: [
+  {
+    name:lm5-darkling-weapon
+    shootSound: pulseBlast
+    mirror: true
+    rotationLimit: 30
+    rotateSpeed: 0.4
+    rotate: true
+    x: 12
+    y: -7
+    shootY: 16
+    recoil: 4
+    reload: 130
+    cooldownTime: 156
+    shake: 7
+    layerOffset: 0.02
+    shadow: 10
+    shootStatus: slow
+    shootStatusDuration: 131
+    heatColor: ff0000
+    shoot: {
+      shots: 1
+    }
+    parts: [
+      {
+        type: RegionPart
+        suffix: -blade
+        under: true
+        layerOffset: -0.001
+        heatColor: 54d4ff
+        heatProgress: {
+          type: heat
+          op: add
+          amount: 0.2
+          op: min
+          other: warmup
+        }
+        progress: {
+          type: warmup
+          op: blend
+          other: reload
+          amount: 0.1
+        }
+        x: 3.375
+        y: 2.5
+        moveY: 1
+        moveX: 0
+        moveRot: -45
+        moves: [
+          {
+            progress: {
+              type: reload
+              op: curve
+              interp: slope
+              start: 0
+              end: 0.2
+            }
+            x: 0
+            y: 0
+            rot: 36
+          }
+        ]
+      }
+      {
+        type: RegionPart
+        suffix: -blade
+        under: true
+        layerOffset: -0.001
+        heatColor: 54d4ff
+        heatProgress: {
+          type: heat
+          op: add
+          amount: 0.2
+          op: min
+          other: warmup
+        }
+        progress: {
+          type: warmup
+          op: blend
+          other: reload
+          amount: 0.1
+        }
+        x: 3.375
+        y: 0.5
+        moveY: 0
+        moveX: 0.3
+        moveRot: -62
+        moves: [
+          {
+            progress: {
+              type: reload
+              op: curve
+              interp: slope
+              start: 0.2
+              end: 0.2
+            }
+            x: 0
+            y: 0
+            rot: 36
+          }
+        ]
+      }
+      {
+        type: RegionPart
+        suffix: -blade
+        under: true
+        layerOffset: -0.001
+        heatColor: 54d4ff
+        heatProgress: {
+          type: heat
+          op: add
+          amount: 0.2
+          op: min
+          other: warmup
+        }
+        progress: {
+          type: warmup
+          op: blend
+          other: reload
+          amount: 0.1
+        }
+        x: 3.375
+        y: -1.5
+        moveY: -1
+        moveX: 0.6
+        moveRot: -79
+        moves: [
+          {
+            progress: {
+              type: reload
+              op: curve
+              interp: slope
+              start: 0.4
+              end: 0.2
+            }
+            x: 0
+            y: 0
+            rot: 36
+          }
+        ]
+      }
+      {
+        type: RegionPart
+        suffix: -blade
+        under: true
+        layerOffset: -0.001
+        heatColor: 54d4ff
+        heatProgress: {
+          type: heat
+          op: add
+          amount: 0.2
+          op: min
+          other: warmup
+        }
+        progress: {
+          type: warmup
+          op: blend
+          other: reload
+          amount: 0.1
+        }
+        x: 3.375
+        y: -3.5
+        moveY: -2
+        moveX: 0.9
+        moveRot: -96
+        moves: [
+          {
+            progress: {
+              type: reload
+              op: curve
+              interp: slope
+              start: 0.6
+              end: 0.2
+            }
+            x: 0
+            y: 0
+            rot: 36
+          }
+        ]
+      }
+      {
+        type: RegionPart
+        suffix: -blade
+        under: true
+        layerOffset: -0.001
+        heatColor: 54d4ff
+        heatProgress: {
+          type: heat
+          op: add
+          amount: 0.2
+          op: min
+          other: warmup
+        }
+        progress: {
+          type: warmup
+          op: blend
+          other: reload
+          amount: 0.1
+        }
+        x: 3.375
+        y: -5.5
+        moveY: -3
+        moveX: 1.2
+        moveRot: -113
+        moves: [
+          {
+            progress: {
+              type: reload
+              op: curve
+              interp: slope
+              start: 0.8
+              end: 0.2
+            }
+            x: 0
+            y: 0
+            rot: 36
+          }
+        ]
+      }
+    ]
+    bullet: {
+      type: ArtilleryBulletType
+      damage: 260
+      speed: 5.5
+      collidesTiles: true
+      collides: true
+      lifetime: 60
+      shootEffect: shootBigColor
+      smokeEffect: shootSmokeSquareBig
+      frontColor: ffffff
+      trailEffect: {
+        type: MultiEffect
+        effects: [
+          artilleryTrail
+          artilleryTrailSmoke
+        ]
+      }
+      hitSound: none
+      width: 18
+      height: 24
+      rangeOverride: 385
+      lightColor: 54d4ff
+      trailColor: 54d4ff
+      hitColor: 54d4ff
+      backColor: 54d4ff
+      lightRadius: 40
+      lightOpacity: 0.7
+      trailWidth: 4.5
+      trailLength: 19
+      trailChance: -1
+      despawnEffect: none
+      despawnSound: dullExplosion
+      despawnShake: 5
+      hitEffect: {
+        type: ExplosionEffect
+        lifetime: 50
+        waveStroke: 5
+        waveColor: 54d4ff
+        sparkColor: 54d4ff
+        waveRad: 45
+        smokeSize: 0
+        smokeSizeBase: 0
+        sparks: 10
+        sparkRad: 25
+        sparkLen: 8
+        sparkStroke: 3
+      }
+      splashDamage: 120
+      splashDamageRadius: 36
+      fragBullets: 15
+      fragVelocityMin: 0.5
+      fragRandomSpread: 130
+      fragLifeMin: 0.3
+      fragBullet: {
+        type: BasicBulletType
+        damage: 37
+        speed: 5.5
+        pierceCap: 2
+        pierceBuilding: true
+        homingPower: 0.09
+        homingRange: 150
+        lifetime: 40
+        shootEffect: shootBigColor
+        smokeEffect: shootSmokeSquareBig
+        frontColor: ffffff
+        hitSound: none
+        width: 12
+        height: 20
+        lightColor: 54d4ff
+        trailColor: 54d4ff
+        hitColor: 54d4ff
+        backColor: 54d4ff
+        lightRadius: 40
+        lightOpacity: 0.7
+        trailWidth: 2.2
+        trailLength: 7
+        trailChance: -1
+        collidesAir: false
+        despawnEffect: none
+        splashDamage: 35
+        splashDamageRadius: 30
+        hitEffect: {
+          type: MultiEffect
+          effects: [
+            {
+              type: ExplosionEffect
+              lifetime: 30
+              waveStroke: 2
+              waveColor: 54d4ff
+              sparkColor: 54d4ff
+              waveRad: 5
+              smokeSize: 0
+              smokeSizeBase: 0
+              sparks: 5
+              sparkRad: 20
+              sparkLen: 6
+              sparkStroke: 2
+            }
+            blastExplosion
+          ]
+        }
+      }
+    }
+  }
+]
