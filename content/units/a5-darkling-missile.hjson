@@ -1,6 +1,6 @@
 type: missile
 template: MissileUnitType
-name: Disrupt Missile
+name: a5-darkling-Missile
 description: Homing missile launched by the Disrupt unit.
 targetAir: false
 speed: 4.6
