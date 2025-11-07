@@ -1,0 +1,118 @@
+type: legs
+template: ErekirUnitType
+name: m4-darkling
+description: Medium-sized hexapod mech with frontal arc shield. Fires weaving missiles at enemies.
+
+drag: 0.1
+speed: 0.6
+hitSize: 30
+health: 6500
+armor: 5
+rotateSpeed: 2.1
+
+lockLegBase: true
+legContinuousMove: true
+legGroupSize: 3
+legStraightness: 0.4
+baseLegStraightness: 0.5
+legMaxLength: 1.3
+researchCostMultiplier: 0
+
+legCount: 6
+legLength: 15
+legForwardScl: 0.45
+legMoveSpace: 1.4
+rippleScale: 2
+stepShake: 0.5
+legExtension: -5
+legBaseOffset: 5
+
+ammoType: power
+ammoCapacity: 2000
+
+legSplashDamage: 32
+legSplashRange: 30
+drownTimeMultiplier: 0.5
+
+hovering: true
+shadowElevation: 0.4
+groundLayer: 75
+
+abilities: [
+  {
+    type: ShieldArcAbility
+    region: tecta-shield
+    radius: 45
+    angle: 82
+    regen: 0.667
+    cooldown: 480
+    max: 2200
+    y: -20
+    width: 8
+    whenShooting: false
+    chanceDeflect: 1
+  }
+]
+
+weapons: [
+  {
+    name: m4-darkling-weapon
+    shootSound: malignShoot
+    mirror: true
+    top: false
+    x: 15.5
+    y: 1
+    shootY: 11.75
+    recoil: 3
+    reload: 40
+    shake: 3
+    cooldownTime: 40
+    inaccuracy: 3
+    velocityRnd: 0.33
+    heatColor: ff0000
+    shoot: {
+      shots: 3
+    }
+    bullet: {
+      type: MissileBulletType
+      damage: 60
+      speed: 4.2
+      homingPower: 0.2
+      weaveMag: 4
+      weaveScale: 4
+      lifetime: 55
+      shootEffect: shootBig2
+      smokeEffect: shootSmokeTitan
+      splashDamage: 70
+      splashDamageRadius: 30
+      frontColor: ffffff
+      hitSound: none
+      width: 10
+      height: 10
+      lightColor: 54d4ff
+      trailColor: 54d4ff
+      backColor: 54d4ff
+      lightRadius: 40
+      lightOpacity: 0.7
+      trailWidth: 2.8
+      trailLength: 20
+      trailChance: -1
+      despawnSound: dullExplosion
+      despawnEffect: none
+      hitEffect: {
+        type: ExplosionEffect
+        lifetime: 20
+        waveStroke: 2
+        waveColor: 54d4ff
+        sparkColor: 54d4ff
+        waveRad: 12
+        smokeSize: 0
+        smokeSizeBase: 0
+        sparks: 10
+        sparkRad: 35
+        sparkLen: 4
+        sparkStroke: 1.5
+      }
+    }
+  }
+]
