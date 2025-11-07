@@ -27,9 +27,6 @@ stepShake: 0.5
 legExtension: -5
 legBaseOffset: 5
 
-ammoType: power
-ammoCapacity: 2000
-
 legSplashDamage: 32
 legSplashRange: 30
 drownTimeMultiplier: 0.5
