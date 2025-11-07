@@ -10,7 +10,8 @@ rotateSpeed: 0.8
 floorMultiplier: 0.3
 immunities: [
 burning
-melting]
+melting
+]
 treadRects: {
   {
     x: -88.5
