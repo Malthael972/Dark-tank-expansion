@@ -11,8 +11,8 @@ crushDamage: 2.6
 floorMultiplier: 0.5
 drownTimeMultiplier: 1.25
 immunities: {
-burning 
-melting
+[burning]
+[melting]
 }
 treadRects: {
   {
