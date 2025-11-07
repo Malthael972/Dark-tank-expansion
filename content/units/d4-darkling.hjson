@@ -14,12 +14,10 @@ immunities: [
 burning
 melting]
 treadRects: {
-  {
     x: -55
     y: -61
     width: 28
     height: 130
-  }
   }
 weapons: {
   {
