@@ -1,5 +1,5 @@
 name: d4-darkling
-type: Tank
+type: tank
 template: ErekirUnitType 
 hitSize: 28
 treadPullOffset: 4
