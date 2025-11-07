@@ -1,6 +1,6 @@
-name: d4-darkling
 type: tank
 template: ErekirUnitType 
+name: d4-darkling
 hitSize: 28
 treadPullOffset: 4
 speed: 0.63
@@ -11,15 +11,18 @@ crushDamage: 2.6
 floorMultiplier: 0.5
 drownTimeMultiplier: 1.25
 immunities: [
-burning
-melting]
-treadRects: {
+  burning
+  melting
+]
+treadRects: [
+  {
     x: -55
     y: -61
     width: 28
     height: 130
   }
-weapons: {
+]
+weapons: [
   {
     name: d4-darkling-weapon
     shootSound: mediumCannon
@@ -39,8 +42,8 @@ weapons: {
     bullet: {
       type: BasicBulletType
       sprite: missile-large
-      speed: 8
       damage: 190
+      speed: 8
       width: 9.5
       height: 13
       lifetime: 18
@@ -69,8 +72,8 @@ weapons: {
       fragBullet: {
         type: BasicBulletType
         sprite: missile-large
-        speed: 8
         damage: 35
+        speed: 8
         width: 8
         height: 12
         lifetime: 15
@@ -99,8 +102,8 @@ weapons: {
     rotateSpeed: 2
     bullet: {
       type: BasicBulletType
-      speed: 4.5
       damage: 25
+      speed: 4.5
       width: 6.5
       height: 11
       shootEffect: sparkShoot
@@ -126,8 +129,8 @@ weapons: {
     rotateSpeed: 2
     bullet: {
       type: BasicBulletType
-      speed: 4.5
       damage: 25
+      speed: 4.5
       width: 6.5
       height: 11
       shootEffect: sparkShoot
@@ -142,4 +145,4 @@ weapons: {
       despawnEffect: hitBulletColor
     }
   }
-}
+]
