@@ -1,9 +1,9 @@
 researchCostMultiplier: 0.5
 type: UnitAssembler
-name: dark-mech-assembler
+name: dark-tank-assembler
 size: 5
 category: units
-research: tant-assembler
+research: tank-assembler
 planet: erekir
 requirements: [
   beryllium/150
