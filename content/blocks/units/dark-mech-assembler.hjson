@@ -1,0 +1,39 @@
+researchCostMultiplier: 0.5
+type: UnitAssembler
+name: dark-mech-assembler
+size: 5
+category: units
+research: mech-assembler
+planet: erekir
+requirements: [
+  beryllium/150
+]
+plans: [
+   {
+    type: AssemblerUnitPlan
+    unit: m4-darkling
+    requirements: [
+      dark-tank-expansion-m1-darkling/4
+      beryllium-wall-large/12
+    ]
+    time: 4000
+  }
+  {
+    type: AssemblerUnitPlan
+    unit: m5-darkling
+    requirements: [
+      dark-tank-expansion-m2-darkling/6
+      carbide-wall-large/20
+    ]
+    time: 6000
+  }
+]
+squareSprite: false
+consumes: {
+power: 2
+liquid:{
+    liquid: cyanogen
+    amount: 0.16
+}
+}
+areaSize: 13
