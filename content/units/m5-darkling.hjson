@@ -27,9 +27,6 @@ legBaseOffset: 19
 legStraightLength: 0.9
 legMaxLength: 1.2
 
-ammoType: power
-ammoCapacity: 2000
-
 legSplashDamage: 32
 legSplashRange: 32
 drownTimeMultiplier: 0.5
