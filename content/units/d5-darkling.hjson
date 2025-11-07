@@ -1,38 +1,54 @@
 type: tank
-template: ErekirUnitType
+template: ErekirUnitType 
+name: d5-darkling
+description: Massive artillery tank with a devastating main cannon that spawns multiple weaving projectiles. Features animated heat vents and rotating blades.
 hitSize: 46
 treadPullOffset: 1
 speed: 0.48
+rotateSpeed: 0.8
 health: 22000
 armor: 26
 crushDamage: 5
-rotateSpeed: 0.8
 floorMultiplier: 0.3
+
 immunities: [
-burning
-melting
+  burning
+  melting
 ]
-treadRects: {
+
+treadRects: [
   {
     x: -88.5
-    y: 36.5
+    y: -36.5
     width: 56
     height: 73
   }
   {
     x: -91.5
-    y: -73.5
+    y: -84
     width: 29
     height: 17
   }
   {
     x: -56.5
-    y: -106.5
+    y: -107
     width: 39
     height: 19
   }
-}
-weapons: {
+]
+
+parts: [
+  {
+    type: RegionPart
+    suffix: -glow
+    color: ff0000
+    blending: additive
+    layer: -1
+    outline: false
+  }
+]
+
+weapons: [
   {
     name: d5-darkling-weapon
     shootSound: largeCannon
@@ -51,7 +67,7 @@ weapons: {
     shootWarmupSpeed: 0.06
     cooldownTime: 110
     minWarmup: 0.9
-    parts: {
+    parts: [
       {
         type: RegionPart
         suffix: -glow
@@ -104,17 +120,16 @@ weapons: {
         progress: {
           type: warmup
           delay: 0.6
-          blend: {
-            type: reload
-            amount: 0.3
-          }
+          op: blend
+          other: reload
+          amount: 0.3
         }
         heatProgress: {
           type: heat
-          add: 0.3
-          min: {
-            type: warmup
-          }
+          op: add
+          amount: 0.3
+          op: min
+          other: warmup
         }
         heatColor: ff1a1a
         mirror: true
@@ -130,17 +145,16 @@ weapons: {
         progress: {
           type: warmup
           delay: 0.3
-          blend: {
-            type: reload
-            amount: 0.3
-          }
+          op: blend
+          other: reload
+          amount: 0.3
         }
         heatProgress: {
           type: heat
-          add: 0.3
-          min: {
-            type: warmup
-          }
+          op: add
+          amount: 0.3
+          op: min
+          other: warmup
         }
         heatColor: ff1a1a
         mirror: true
@@ -155,17 +169,16 @@ weapons: {
         suffix: -blade
         progress: {
           type: warmup
-          blend: {
-            type: reload
-            amount: 0.3
-          }
+          op: blend
+          other: reload
+          amount: 0.3
         }
         heatProgress: {
           type: heat
-          add: 0.3
-          min: {
-            type: warmup
-          }
+          op: add
+          amount: 0.3
+          op: min
+          other: warmup
         }
         heatColor: ff1a1a
         mirror: true
@@ -175,12 +188,12 @@ weapons: {
         layerOffset: -0.002
         x: 2.75
       }
-    }
+    ]
     bullet: {
       type: BasicBulletType
       sprite: missile-large
-      speed: 8
       damage: 360
+      speed: 8
       width: 12
       height: 20
       lifetime: 35
@@ -213,55 +226,15 @@ weapons: {
         sparkLen: 4
         sparkStroke: 3
       }
-      spawnBullets: {
+      spawnBullets: [
         {
           type: BasicBulletType
-          speed: 0.4
           damage: 60
+          speed: 0.4
           drag: 0.002
           width: 12
           height: 11
-          lifetime: 52.5
-          weaveRandom: false
-          hitSize: 5
-          pierceCap: 2
-          pierce: true
-          pierceBuilding: true
-          hitColor: feb380
-          backColor: feb380
-          trailColor: feb380
-          frontColor: ffffff
-          trailWidth: 2.5
-          trailLength: 7
-          weaveScale: 2.5
-          weaveMag: 4
-          splashDamage: 65
-          splashDamageRadius: 30
-          despawnEffect: {
-            type: ExplosionEffect
-            lifetime: 50
-            waveStroke: 4
-            waveColor: feb380
-            sparkColor: feb380
-            waveRad: 30
-            smokeSize: 7
-            smokes: 6
-            smokeSizeBase: 0
-            smokeColor: feb380
-            sparks: 5
-            sparkRad: 30
-            sparkLen: 3
-            sparkStroke: 1.5
-          }
-        }
-        {
-          type: BasicBulletType
-          speed: 0.4
-          damage: 60
-          drag: 0.002
-          width: 12
-          height: 11
-          lifetime: 52.5
+          lifetime: 92.5
           weaveRandom: false
           hitSize: 5
           pierceCap: 2
@@ -296,12 +269,12 @@ weapons: {
         }
         {
           type: BasicBulletType
-          speed: 0.933
           damage: 60
+          speed: 0.4
           drag: 0.002
           width: 12
           height: 11
-          lifetime: 41.875
+          lifetime: 92.5
           weaveRandom: false
           hitSize: 5
           pierceCap: 2
@@ -313,8 +286,8 @@ weapons: {
           frontColor: ffffff
           trailWidth: 2.5
           trailLength: 7
-          weaveScale: 2.917
-          weaveMag: 3.667
+          weaveScale: 2.5
+          weaveMag: 4
           splashDamage: 65
           splashDamageRadius: 30
           despawnEffect: {
@@ -336,12 +309,12 @@ weapons: {
         }
         {
           type: BasicBulletType
-          speed: 0.933
           damage: 60
+          speed: 0.64
           drag: 0.002
           width: 12
           height: 11
-          lifetime: 41.875
+          lifetime: 65
           weaveRandom: false
           hitSize: 5
           pierceCap: 2
@@ -353,8 +326,8 @@ weapons: {
           frontColor: ffffff
           trailWidth: 2.5
           trailLength: 7
-          weaveScale: 2.917
-          weaveMag: -3.667
+          weaveScale: 2.92
+          weaveMag: -3.2
           splashDamage: 65
           splashDamageRadius: 30
           despawnEffect: {
@@ -376,12 +349,12 @@ weapons: {
         }
         {
           type: BasicBulletType
-          speed: 1.467
           damage: 60
+          speed: 0.64
           drag: 0.002
           width: 12
           height: 11
-          lifetime: 36.458
+          lifetime: 65
           weaveRandom: false
           hitSize: 5
           pierceCap: 2
@@ -393,8 +366,8 @@ weapons: {
           frontColor: ffffff
           trailWidth: 2.5
           trailLength: 7
-          weaveScale: 3.333
-          weaveMag: 3.333
+          weaveScale: 2.92
+          weaveMag: 3.2
           splashDamage: 65
           splashDamageRadius: 30
           despawnEffect: {
@@ -416,12 +389,12 @@ weapons: {
         }
         {
           type: BasicBulletType
-          speed: 1.467
           damage: 60
+          speed: 0.88
           drag: 0.002
           width: 12
           height: 11
-          lifetime: 36.458
+          lifetime: 48.75
           weaveRandom: false
           hitSize: 5
           pierceCap: 2
@@ -433,8 +406,8 @@ weapons: {
           frontColor: ffffff
           trailWidth: 2.5
           trailLength: 7
-          weaveScale: 3.333
-          weaveMag: -3.333
+          weaveScale: 3.33
+          weaveMag: -2.4
           splashDamage: 65
           splashDamageRadius: 30
           despawnEffect: {
@@ -456,12 +429,52 @@ weapons: {
         }
         {
           type: BasicBulletType
-          speed: 2.0
           damage: 60
+          speed: 0.88
           drag: 0.002
           width: 12
           height: 11
-          lifetime: 32.917
+          lifetime: 48.75
+          weaveRandom: false
+          hitSize: 5
+          pierceCap: 2
+          pierce: true
+          pierceBuilding: true
+          hitColor: feb380
+          backColor: feb380
+          trailColor: feb380
+          frontColor: ffffff
+          trailWidth: 2.5
+          trailLength: 7
+          weaveScale: 3.33
+          weaveMag: 2.4
+          splashDamage: 65
+          splashDamageRadius: 30
+          despawnEffect: {
+            type: ExplosionEffect
+            lifetime: 50
+            waveStroke: 4
+            waveColor: feb380
+            sparkColor: feb380
+            waveRad: 30
+            smokeSize: 7
+            smokes: 6
+            smokeSizeBase: 0
+            smokeColor: feb380
+            sparks: 5
+            sparkRad: 30
+            sparkLen: 3
+            sparkStroke: 1.5
+          }
+        }
+        {
+          type: BasicBulletType
+          damage: 60
+          speed: 1.12
+          drag: 0.002
+          width: 12
+          height: 11
+          lifetime: 38.75
           weaveRandom: false
           hitSize: 5
           pierceCap: 2
@@ -474,7 +487,7 @@ weapons: {
           trailWidth: 2.5
           trailLength: 7
           weaveScale: 3.75
-          weaveMag: 3.0
+          weaveMag: -1.6
           splashDamage: 65
           splashDamageRadius: 30
           despawnEffect: {
@@ -496,12 +509,12 @@ weapons: {
         }
         {
           type: BasicBulletType
-          speed: 2.0
           damage: 60
+          speed: 1.12
           drag: 0.002
           width: 12
           height: 11
-          lifetime: 32.917
+          lifetime: 38.75
           weaveRandom: false
           hitSize: 5
           pierceCap: 2
@@ -514,7 +527,7 @@ weapons: {
           trailWidth: 2.5
           trailLength: 7
           weaveScale: 3.75
-          weaveMag: -3.0
+          weaveMag: 1.6
           splashDamage: 65
           splashDamageRadius: 30
           despawnEffect: {
@@ -536,12 +549,12 @@ weapons: {
         }
         {
           type: BasicBulletType
-          speed: 2.533
           damage: 60
+          speed: 1.36
           drag: 0.002
           width: 12
           height: 11
-          lifetime: 30.625
+          lifetime: 32.5
           weaveRandom: false
           hitSize: 5
           pierceCap: 2
@@ -553,8 +566,8 @@ weapons: {
           frontColor: ffffff
           trailWidth: 2.5
           trailLength: 7
-          weaveScale: 4.167
-          weaveMag: 2.667
+          weaveScale: 4.17
+          weaveMag: -0.8
           splashDamage: 65
           splashDamageRadius: 30
           despawnEffect: {
@@ -576,12 +589,12 @@ weapons: {
         }
         {
           type: BasicBulletType
-          speed: 2.533
           damage: 60
+          speed: 1.36
           drag: 0.002
           width: 12
           height: 11
-          lifetime: 30.625
+          lifetime: 32.5
           weaveRandom: false
           hitSize: 5
           pierceCap: 2
@@ -593,8 +606,8 @@ weapons: {
           frontColor: ffffff
           trailWidth: 2.5
           trailLength: 7
-          weaveScale: 4.167
-          weaveMag: -2.667
+          weaveScale: 4.17
+          weaveMag: 0.8
           splashDamage: 65
           splashDamageRadius: 30
           despawnEffect: {
@@ -616,12 +629,12 @@ weapons: {
         }
         {
           type: BasicBulletType
-          speed: 3.067
           damage: 60
+          speed: 1.6
           drag: 0.002
           width: 12
           height: 11
-          lifetime: 29.167
+          lifetime: 28.75
           weaveRandom: false
           hitSize: 5
           pierceCap: 2
@@ -633,8 +646,8 @@ weapons: {
           frontColor: ffffff
           trailWidth: 2.5
           trailLength: 7
-          weaveScale: 4.583
-          weaveMag: 2.333
+          weaveScale: 4.58
+          weaveMag: 0
           splashDamage: 65
           splashDamageRadius: 30
           despawnEffect: {
@@ -656,12 +669,12 @@ weapons: {
         }
         {
           type: BasicBulletType
-          speed: 3.067
           damage: 60
+          speed: 1.6
           drag: 0.002
           width: 12
           height: 11
-          lifetime: 29.167
+          lifetime: 28.75
           weaveRandom: false
           hitSize: 5
           pierceCap: 2
@@ -673,8 +686,8 @@ weapons: {
           frontColor: ffffff
           trailWidth: 2.5
           trailLength: 7
-          weaveScale: 4.583
-          weaveMag: -2.333
+          weaveScale: 4.58
+          weaveMag: 0
           splashDamage: 65
           splashDamageRadius: 30
           despawnEffect: {
@@ -694,17 +707,7 @@ weapons: {
             sparkStroke: 1.5
           }
         }
-      }
+      ]
     }
   }
-}
-parts: {
-  {
-    type: RegionPart
-    suffix: -glow
-    color: ff0000
-    blending: additive
-    layer: -1
-    outline: false
-  }
-}
+]
