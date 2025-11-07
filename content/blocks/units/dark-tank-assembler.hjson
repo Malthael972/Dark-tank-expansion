@@ -3,7 +3,7 @@ type: UnitAssembler
 name: dark-mech-assembler
 size: 5
 category: units
-research: mech-assembler
+research: tant-assembler
 planet: erekir
 requirements: [
   beryllium/150
